@@ -1,0 +1,113 @@
+@import "../../helpers/mixins";
+.filter {
+  &-container {
+    padding: 56px 0 24px 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    color: #476285;
+  }
+  &-btn {
+    display: flex;
+    gap: 10px;
+    width: 9%;
+    @include styleForSelect();
+    &--icon,
+    & :where(.filter-text) {
+      pointer-events: none;
+    }
+  }
+  &-reload,
+  &-search,
+  &-price,
+  &-sort {
+    @include styleForSelect();
+  }
+  &-price,
+  &-search,
+  &-sort,
+  &-sort--select,
+  &-sort--describe {
+    display: flex;
+    align-items: center;
+  }
+  &-price {
+    gap: 10px;
+  }
+  &-sort {
+    gap: 50px;
+    &--select {
+      gap: 10px;
+    }
+    &--describe {
+      gap: 5px;
+    }
+  }
+  &-search {
+    cursor: text;
+    gap: 10px;
+    width: 40%;
+    &--input {
+      border: none;
+      outline: none;
+      width: 95%;
+      font-size: 14px;
+      font-weight: 400;
+      background: #fafcff;
+      &::placeholder {
+        color: #9d9bb9;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+  &-listcustom {
+    background: #cde2fe;
+    border-radius: 12px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    &--card {
+      padding: 10px;
+      cursor: pointer;
+    }
+    &--active {
+      background: white;
+      border-radius: 10px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &-container {
+      flex-wrap: wrap;
+    }
+    &-btn {
+      display: none;
+    }
+    &-search {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-search {
+      width: 80%;
+    }
+    &-reload,
+    &-search,
+    &-price,
+    &-sort {
+      font-size: 12px;
+    }
+    &-listcustom {
+      display: none;
+    }
+    &-search {
+      &--input {
+        font-size: 12px;
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

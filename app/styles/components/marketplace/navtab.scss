@@ -1,0 +1,53 @@
+.navtab {
+  &-container {
+    padding-top: 56px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #bdcadb;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &-title {
+    font-size: 24px;
+    color: #476285;
+    font-weight: 400;
+  }
+  &-list {
+    display: flex;
+    // align-items: center;
+    padding: 6px;
+    border-radius: 10px;
+    gap: 4px;
+    // flex-direction: row;
+    background: white;
+  }
+  &-artist,
+  &-collection {
+    padding: 8px 16px;
+    color: #8395af;
+    cursor: pointer;
+  }
+  &-artist--text,
+  &-collection--text {
+    font-size: 16px;
+    pointer-events: none;
+    font-weight: 400;
+  }
+  &-active {
+    background: #11315b;
+    color: white;
+    border-radius: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    &-container {
+      flex-wrap: wrap;
+    }
+    &-artist,
+    &-collection {
+      padding: 8px 13px;
+      &--text {
+        font-size: 14px;
+      }
+    }
+  }
+}

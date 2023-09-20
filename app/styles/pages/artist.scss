@@ -1,0 +1,8 @@
+@import "../components/artist/banner.scss";
+@import "../components/artist/tab.scss";
+@import "../components/artist/collection.scss";
+.artist-nfts {
+  & :where(.filter-container) {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,109 @@
+.filter-container {
+  padding: 56px 0 24px 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  color: #476285;
+}
+.filter-btn {
+  display: flex;
+  gap: 10px;
+  width: 9%;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 12px 16px;
+  border: 1px solid #bdcadb;
+  border-radius: 12px;
+  background: #fafcff;
+}
+.filter-btn--icon, .filter-btn :where(.filter-text) {
+  pointer-events: none;
+}
+.filter-reload, .filter-search, .filter-price, .filter-sort {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 12px 16px;
+  border: 1px solid #bdcadb;
+  border-radius: 12px;
+  background: #fafcff;
+}
+.filter-price, .filter-search, .filter-sort, .filter-sort--select, .filter-sort--describe {
+  display: flex;
+  align-items: center;
+}
+.filter-price {
+  gap: 10px;
+}
+.filter-sort {
+  gap: 50px;
+}
+.filter-sort--select {
+  gap: 10px;
+}
+.filter-sort--describe {
+  gap: 5px;
+}
+.filter-search {
+  cursor: text;
+  gap: 10px;
+  width: 40%;
+}
+.filter-search--input {
+  border: none;
+  outline: none;
+  width: 95%;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fafcff;
+}
+.filter-search--input::placeholder {
+  color: #9d9bb9;
+  font-size: 14px;
+  font-weight: 400;
+}
+.filter-listcustom {
+  background: #cde2fe;
+  border-radius: 12px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+.filter-listcustom--card {
+  padding: 10px;
+  cursor: pointer;
+}
+.filter-listcustom--active {
+  background: white;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1023px) {
+  .filter-container {
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    display: none;
+  }
+  .filter-search {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filter-search {
+    width: 80%;
+  }
+  .filter-reload, .filter-search, .filter-price, .filter-sort {
+    font-size: 12px;
+  }
+  .filter-listcustom {
+    display: none;
+  }
+  .filter-search--input {
+    font-size: 12px;
+  }
+  .filter-search--input::placeholder {
+    font-size: 12px;
+  }
+}

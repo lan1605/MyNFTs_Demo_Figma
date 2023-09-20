@@ -1,0 +1,74 @@
+.sell-container {
+  padding-bottom: 132px;
+}
+.sell-top {
+  padding-bottom: 48px;
+  width: 100%;
+  text-align: center;
+}
+.sell-top--title {
+  color: #21204a;
+  font-weight: 600;
+  font-size: 32px;
+}
+.sell-list {
+  display: flex;
+  gap: 24px;
+}
+.sell-item--icon {
+  padding: 16px;
+  border-radius: 24px;
+  background: white;
+  margin-bottom: 24px;
+  width: 60px;
+  height: 60px;
+}
+.sell-item--title {
+  font-weight: 600;
+  color: #11315b;
+  margin-bottom: 12px;
+}
+.sell-item--desc {
+  font-size: 14px;
+  color: #476285;
+  font-weight: 400;
+}
+@media screen and (max-width: 1023px) {
+  .sell-container {
+    padding-bottom: 60px;
+  }
+  .sell-list {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .sell-item {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sell-container {
+    padding-bottom: 30px;
+  }
+  .sell-top {
+    padding-bottom: 24px;
+  }
+  .sell-top--title {
+    font-size: 25px;
+  }
+  .sell-list {
+    gap: 25px;
+  }
+  .sell-item {
+    width: 100%;
+  }
+  .sell-item--icon {
+    margin-bottom: 12px;
+  }
+  .sell-item--title {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .sell-item--desc {
+    font-size: 12px;
+  }
+}

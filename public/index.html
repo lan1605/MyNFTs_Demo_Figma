@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website NFTs Demo</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/fontawesome.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header-logo"> <img class="header-img" src="./images/Logo/Logo.png"></div>
+        <div class="header-list"> 
+          <div class="header-menu">
+            <div class="header-menu--list"> <a class="header-menu--item" href="index.html">Home </a><a class="header-menu--item" href="marketplace.html">Market Place</a><a class="header-menu--item" href="all_nfts.html">All NFTs</a><a class="header-menu--item" href="activities.html">Activities</a></div>
+            <div class="header-menu--dots"> <span class="header-menu--dot"></span><span class="header-menu--dot"></span><span class="header-menu--dot"></span></div><i class="fa fa-search header-menu--search"></i>
+            <div class="header-menu--btn"><span class="header-menu--desc">Connect wallet</span></div>
+          </div>
+        </div>
+      </header>
+      <div class="banner"> 
+        <div class="banner-container"> 
+          <div class="banner-info"> 
+            <div class="banner-info--title">Discover, collect, and sell extraordinary NFTs</div>
+            <div class="banner-info--desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+            <div class="banner-info--btn">  
+              <div class="banner-info--text">Explore now</div>
+              <div class="banner-info--icon"> <i class="fa fa-arrow-right"></i></div>
+            </div>
+          </div>
+          <div class="banner-nft"> 
+            <div class="banner-nft--img"> <img src="./images/home/banner img.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="container"> 
+        <section class="autions">
+          <div class="autions-container"> 
+            <div class="autions-top"> 
+              <div class="autions-top--left"> 
+                <div class="autions-top--title">Hot Autions</div>
+                <div class="autions-top--select"> 
+                  <div class="autions-top--desc">Ethereum</div><i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="autions-top--right">
+                <div class="autions-top--all">See all</div>
+                <div class="autions-top--btn"> 
+                  <div class="autions-top--arrow action--btn" id="left"><i class="fal fa-arrow-left"></i></div>
+                  <div class="autions-top--arrow" id="right"><i class="fal fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="autions-items"> 
+              <div class="autions-list"><a class="autions-item" href="#"> 
+                  <div class="autions-item--top"> 
+                    <div class="autions-item--image"> <img class="autions-item--img" src="./images/home/img-ex-shiba.png"/>
+                      <div class="autions-item--place">Place a bid</div>
+                    </div>
+                    <div class="autions-item--collection">Collection name</div>
+                    <div class="autions-item--title">NFT name Ex Shiba Astronaut</div>
+                  </div>
+                  <div class="autions-item--middle"> 
+                    <div class="autions-item--left"> 
+                      <div class="autions-item--name">Current bid</div><strong class="autions-item--strong">300 ETH</strong>
+                      <div class="autions-item--other">$130,729.12</div>
+                    </div>
+                    <div class="autions-item--right">
+                      <div class="autions-item--name">Auction ending in</div><strong class="autions-item--strong">03d : 25h : 05m</strong>
+                      <div class="autions-item--other">Bids: 25</div>
+                    </div>
+                  </div>
+                  <div class="autions-item--bottom">
+                    <div class="autions-item--artist"> <img class="autions-item--avatar" src="./images/home/artist.gif"/>
+                      <div class="autions-item--author">Artist name</div>
+                    </div>
+                    <div class="autions-item--like"> <i class="fa fa-heart autions-item--icon"> </i>
+                      <div class="autions-item--number">12121</div>
+                    </div>
+                  </div></a><a class="autions-item" href="#"> 
+                  <div class="autions-item--top"> 
+                    <div class="autions-item--image"> <img class="autions-item--img" src="./images/home/img-ex-shiba-2.png"/>
+                      <div class="autions-item--place">Place a bid</div>
+                    </div>
+                    <div class="autions-item--collection">Collection name</div>
+                    <div class="autions-item--title">NFT name Ex Shiba Astronaut</div>
+                  </div>
+                  <div class="autions-item--middle"> 
+                    <div class="autions-item--left"> 
+                      <div class="autions-item--name">Current bid</div><strong class="autions-item--strong">300 ETH</strong>
+                      <div class="autions-item--other">$130,729.12</div>
+                    </div>
+                    <div class="autions-item--right">
+                      <div class="autions-item--name">Auction ending in</div><strong class="autions-item--strong">03d : 25h : 05m</strong>
+                      <div class="autions-item--other">Bids: 25</div>
+                    </div>
+                  </div>
+                  <div class="autions-item--bottom">
+                    <div class="autions-item--artist"> <img class="autions-item--avatar" src="./images/home/artist.gif"/>
+                      <div class="autions-item--author">Artist name</div>
+                    </div>
+                    <div class="autions-item--like"> <i class="fa fa-heart autions-item--icon"> </i>
+                      <div class="autions-item--number">12121</div>
+                    </div>
+                  </div></a><a class="autions-item" href="#"> 
+                  <div class="autions-item--top"> 
+                    <div class="autions-item--image"> <img class="autions-item--img" src="./images/home/img-ex-shiba-3.png"/>
+                      <div class="autions-item--place">Place a bid</div>
+                    </div>
+                    <div class="autions-item--collection">Collection name</div>
+                    <div class="autions-item--title">NFT name Ex Shiba Astronaut</div>
+                  </div>
+                  <div class="autions-item--middle"> 
+                    <div class="autions-item--left"> 
+                      <div class="autions-item--name">Current bid</div><strong class="autions-item--strong">300 ETH</strong>
+                      <div class="autions-item--other">$130,729.12</div>
+                    </div>
+                    <div class="autions-item--right">
+                      <div class="autions-item--name">Auction ending in</div><strong class="autions-item--strong">03d : 25h : 05m</strong>
+                      <div class="autions-item--other">Bids: 25</div>
+                    </div>
+                  </div>
+                  <div class="autions-item--bottom">
+                    <div class="autions-item--artist"> <img class="autions-item--avatar" src="./images/home/artist.gif"/>
+                      <div class="autions-item--author">Artist name</div>
+                    </div>
+                    <div class="autions-item--like"> <i class="fa fa-heart autions-item--icon"> </i>
+                      <div class="autions-item--number">12121</div>
+                    </div>
+                  </div></a><a class="autions-item" href="#"> 
+                  <div class="autions-item--top"> 
+                    <div class="autions-item--image"> <img class="autions-item--img" src="./images/home/img-ex-shiba-4.png"/>
+                      <div class="autions-item--place">Place a bid</div>
+                    </div>
+                    <div class="autions-item--collection">Collection name</div>
+                    <div class="autions-item--title">NFT name Ex Shiba Astronaut</div>
+                  </div>
+                  <div class="autions-item--middle"> 
+                    <div class="autions-item--left"> 
+                      <div class="autions-item--name">Current bid</div><strong class="autions-item--strong">300 ETH</strong>
+                      <div class="autions-item--other">$130,729.12</div>
+                    </div>
+                    <div class="autions-item--right">
+                      <div class="autions-item--name">Auction ending in</div><strong class="autions-item--strong">03d : 25h : 05m</strong>
+                      <div class="autions-item--other">Bids: 25</div>
+                    </div>
+                  </div>
+                  <div class="autions-item--bottom">
+                    <div class="autions-item--artist"> <img class="autions-item--avatar" src="./images/home/artist.gif"/>
+                      <div class="autions-item--author">Artist name</div>
+                    </div>
+                    <div class="autions-item--like"> <i class="fa fa-heart autions-item--icon"> </i>
+                      <div class="autions-item--number">12121</div>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popular"> 
+          <div class="popular-container"> 
+            <div class="autions-top"> 
+              <div class="autions-top--left"> 
+                <div class="popular--title">Popular Collections</div>
+                <div class="popular-options"> 
+                  <div class="autions-top--select"> 
+                    <div class="autions-top--desc">Ethereum</div><i class="fa fa-chevron-down"></i>
+                  </div>
+                  <div class="popular-toggle"> 
+                    <div class="popular-toggle--option">Today </div>
+                    <div class="popular-toggle--option option-active">This week </div>
+                    <div class="popular-toggle--option">This month</div>
+                  </div>
+                </div>
+              </div>
+              <div class="autions-top--right">
+                <div class="autions-top--all">See all</div>
+                <div class="autions-top--btn"> 
+                  <div class="autions-top--arrow action--btn" id="left"><i class="fal fa-arrow-left"></i></div>
+                  <div class="autions-top--arrow" id="right"><i class="fal fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="popular-items"> 
+              <div class="popular-list"> <a class="popular-item" href="collection.html"> 
+                  <div class="popular-item--top"> 
+                    <div class="popular-item--left"> <img class="popular-item--img" src="./images/home/img-popular-1.jpg"/></div>
+                    <div class="popular-item--right"> <img class="popular-item--img popular-item--imgtop" src="./images/home/img-popular-2.jpg"/>
+                      <div class="popular-item--imgbottom"><img class="popular-item--img" src="./images/home/img-popular-3.jpg"/>
+                        <div class="popular-item--more"><img class="popular-item--img" src="./images/home/img-popular-4.jpg"/></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular-item--bottom">
+                    <div class="popular-item--info"> 
+                      <div class="popular-item--name">NFT name Ex Shiba Astronaut</div>
+                      <div class="popular-item--desc">Floor: 19 ETH ~ $108.7K</div>
+                    </div>
+                    <div class="popular-item--other">
+                      <div class="popular-item--number">128 ETH</div>
+                      <div class="popular-item--percent">-29%</div>
+                    </div>
+                  </div></a><a class="popular-item" href="collection.html"> 
+                  <div class="popular-item--top"> 
+                    <div class="popular-item--left"> <img class="popular-item--img" src="./images/home/img-popular-6.jpg"/></div>
+                    <div class="popular-item--right"> <img class="popular-item--img popular-item--imgtop" src="./images/home/img-popular-5.jpg"/>
+                      <div class="popular-item--imgbottom"><img class="popular-item--img" src="./images/home/img-popular-7.jpg"/>
+                        <div class="popular-item--more"><img class="popular-item--img" src="./images/home/img-popular-8.jpg"/></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular-item--bottom">
+                    <div class="popular-item--info"> 
+                      <div class="popular-item--name">NFT name Ex Shiba Astronaut</div>
+                      <div class="popular-item--desc">Floor: 19 ETH ~ $108.7K</div>
+                    </div>
+                    <div class="popular-item--other">
+                      <div class="popular-item--number">128 ETH</div>
+                      <div class="popular-item--percent">-29%</div>
+                    </div>
+                  </div></a><a class="popular-item" href="collection.html"> 
+                  <div class="popular-item--top"> 
+                    <div class="popular-item--left"> <img class="popular-item--img" src="./images/home/img-popular-9.jpg"/></div>
+                    <div class="popular-item--right"> <img class="popular-item--img popular-item--imgtop" src="./images/home/img-popular-10.jpg"/>
+                      <div class="popular-item--imgbottom"><img class="popular-item--img" src="./images/home/img-popular-11.jpg"/>
+                        <div class="popular-item--more"><img class="popular-item--img" src="./images/home/img-popular-12.jpg"/></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular-item--bottom">
+                    <div class="popular-item--info"> 
+                      <div class="popular-item--name">NFT name Ex Shiba Astronaut</div>
+                      <div class="popular-item--desc">Floor: 19 ETH ~ $108.7K</div>
+                    </div>
+                    <div class="popular-item--other">
+                      <div class="popular-item--number">128 ETH</div>
+                      <div class="popular-item--percent">-29%</div>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="artist"> 
+          <div class="artist-container"> 
+            <div class="autions-top"> 
+              <div class="autions-top--left"> 
+                <div class="popular--title">Top Artists</div>
+                <div class="autions-top--select"> 
+                  <div class="autions-top--desc">Music</div><i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="autions-top--right">
+                <div class="autions-top--all">See all</div>
+              </div>
+            </div>
+            <div class="artist-items"> 
+              <div class="artist-list"> 
+                <div class="artist-item"> <a class="artist-item--left" href="#"> 
+                    <div class="artist-item--number">1</div>
+                    <div class="artist-item--avatar"><img class="artist-item--img" src="./images/home/artist-avatar-1.jpg"/><img class="artist-item--check" src="./images/icons/check.png"/></div>
+                    <div class="artist-item--info"> 
+                      <div class="artist-item--name">Phuong Pham</div>
+                      <div class="artist-item--follow"> <img class="artist-item--icon" src="./images/icons/eth.png" alt=""/>
+                        <div class="artist-item--numberfollowers">2,798</div>
+                      </div>
+                    </div></a>
+                  <div class="artist-item--right">
+                    <div class="artist-item--followers"> <img class="artist-item--imgfollower" src="./images/home/follower-1.jpg"/><img class="artist-item--imgfollower" src="./images/home/follower-2.jpg"/>
+                      <div class="artist-item--after"> <img class="artist-item--imgfollower" src="./images/home/follower-3.jpg"/></div>
+                    </div>
+                    <div class="artist-item--other">Follow by mikain and 2,129 users</div>
+                  </div>
+                </div>
+                <div class="artist-item"> <a class="artist-item--left" href="#"> 
+                    <div class="artist-item--number">2</div>
+                    <div class="artist-item--avatar"><img class="artist-item--img" src="./images/home/artist-avatar-2.jpg"/><img class="artist-item--check" src="./images/icons/check.png"/></div>
+                    <div class="artist-item--info"> 
+                      <div class="artist-item--name">Blake Kathryn</div>
+                      <div class="artist-item--follow"> <img class="artist-item--icon" src="./images/icons/eth.png" alt=""/>
+                        <div class="artist-item--numberfollowers">2,798</div>
+                      </div>
+                    </div></a>
+                  <div class="artist-item--right">
+                    <div class="artist-item--followers"> <img class="artist-item--imgfollower" src="./images/home/follower-1.jpg"/><img class="artist-item--imgfollower" src="./images/home/follower-2.jpg"/>
+                      <div class="artist-item--after"> <img class="artist-item--imgfollower" src="./images/home/follower-3.jpg"/></div>
+                    </div>
+                    <div class="artist-item--other">Follow by mikain and 2,129 users</div>
+                  </div>
+                </div>
+                <div class="artist-item"> <a class="artist-item--left" href="#"> 
+                    <div class="artist-item--number">3</div>
+                    <div class="artist-item--avatar"><img class="artist-item--img" src="./images/home/artist-avatar-3.jpg"/><img class="artist-item--check" src="./images/icons/check.png"/></div>
+                    <div class="artist-item--info"> 
+                      <div class="artist-item--name">Dania India</div>
+                      <div class="artist-item--follow"> <img class="artist-item--icon" src="./images/icons/eth.png" alt=""/>
+                        <div class="artist-item--numberfollowers">2,798</div>
+                      </div>
+                    </div></a>
+                  <div class="artist-item--right">
+                    <div class="artist-item--followers"> <img class="artist-item--imgfollower" src="./images/home/follower-1.jpg"/><img class="artist-item--imgfollower" src="./images/home/follower-2.jpg"/>
+                      <div class="artist-item--after"> <img class="artist-item--imgfollower" src="./images/home/follower-3.jpg"/></div>
+                    </div>
+                    <div class="artist-item--other">Follow by mikain and 2,129 users</div>
+                  </div>
+                </div>
+              </div>
+              <div class="artist-list"> 
+                <div class="artist-item"> <a class="artist-item--left" href="#"> 
+                    <div class="artist-item--number">4</div>
+                    <div class="artist-item--avatar"><img class="artist-item--img" src="./images/home/artist-avatar-4.jpg"/><img class="artist-item--check" src="./images/icons/check.png"/></div>
+                    <div class="artist-item--info"> 
+                      <div class="artist-item--name">Xsullo Studio</div>
+                      <div class="artist-item--follow"> <img class="artist-item--icon" src="./images/icons/eth.png" alt=""/>
+                        <div class="artist-item--numberfollowers">2,798</div>
+                      </div>
+                    </div></a>
+                  <div class="artist-item--right">
+                    <div class="artist-item--followers"> <img class="artist-item--imgfollower" src="./images/home/follower-1.jpg"/><img class="artist-item--imgfollower" src="./images/home/follower-2.jpg"/>
+                      <div class="artist-item--after"> <img class="artist-item--imgfollower" src="./images/home/follower-3.jpg"/></div>
+                    </div>
+                    <div class="artist-item--other">Follow by mikain and 2,129 users</div>
+                  </div>
+                </div>
+                <div class="artist-item"> <a class="artist-item--left" href="#"> 
+                    <div class="artist-item--number">5</div>
+                    <div class="artist-item--avatar"><img class="artist-item--img" src="./images/home/artist-avatar-5.jpg"/><img class="artist-item--check" src="./images/icons/check.png"/></div>
+                    <div class="artist-item--info"> 
+                      <div class="artist-item--name">Stefan Gro Halbuer</div>
+                      <div class="artist-item--follow"> <img class="artist-item--icon" src="./images/icons/eth.png" alt=""/>
+                        <div class="artist-item--numberfollowers">2,798</div>
+                      </div>
+                    </div></a>
+                  <div class="artist-item--right">
+                    <div class="artist-item--followers"> <img class="artist-item--imgfollower" src="./images/home/follower-1.jpg"/><img class="artist-item--imgfollower" src="./images/home/follower-2.jpg"/>
+                      <div class="artist-item--after"> <img class="artist-item--imgfollower" src="./images/home/follower-3.jpg"/></div>
+                    </div>
+                    <div class="artist-item--other">Follow by mikain and 2,129 users</div>
+                  </div>
+                </div>
+                <div class="artist-item"> <a class="artist-item--left" href="#"> 
+                    <div class="artist-item--number">6</div>
+                    <div class="artist-item--avatar"><img class="artist-item--img" src="./images/home/artist-avatar-6.jpg"/><img class="artist-item--check" src="./images/icons/check.png"/></div>
+                    <div class="artist-item--info"> 
+                      <div class="artist-item--name">Nyumori</div>
+                      <div class="artist-item--follow"> <img class="artist-item--icon" src="./images/icons/eth.png" alt=""/>
+                        <div class="artist-item--numberfollowers">2,798</div>
+                      </div>
+                    </div></a>
+                  <div class="artist-item--right">
+                    <div class="artist-item--followers"> <img class="artist-item--imgfollower" src="./images/home/follower-1.jpg"/><img class="artist-item--imgfollower" src="./images/home/follower-2.jpg"/>
+                      <div class="artist-item--after"> <img class="artist-item--imgfollower" src="./images/home/follower-3.jpg"/></div>
+                    </div>
+                    <div class="artist-item--other">Follow by mikain and 2,129 users</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="trending"> 
+          <div class="trending-container"> 
+            <div class="autions-top"> 
+              <div class="autions-top--left"> 
+                <div class="popular--title">Trending NFTs</div>
+                <div class="popular-options">
+                  <div class="autions-top--select"> 
+                    <div class="autions-top--desc">Ethereum</div><i class="fa fa-chevron-down"></i>
+                  </div>
+                  <div class="popular-toggle"> 
+                    <div class="popular-toggle--option option-active">Today </div>
+                    <div class="popular-toggle--option">This week </div>
+                    <div class="popular-toggle--option">This month</div>
+                  </div>
+                </div>
+              </div>
+              <div class="autions-top--right">
+                <div class="autions-top--all">See all</div>
+                <div class="autions-top--btn"> 
+                  <div class="autions-top--arrow action--btn" id="left"><i class="fal fa-arrow-left"></i></div>
+                  <div class="autions-top--arrow" id="right"><i class="fal fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="trending-list"> 
+              <div class="trending-items"> 
+                <div class="trending-item"> 
+                  <div class="trending-item--top"> <img class="trending-item--img" src="./images/home/trending-1.jpg"/></div>
+                  <div class="trending-item--bottom"> 
+                    <div class="trending-item--collection">Collection name </div>
+                    <div class="trending-item--title">NFT name Ex Shiba Astronaut</div>
+                    <div class="trending-item--more">   
+                      <div class="trending-item--left"> 
+                        <div class="trending-item--name">Price</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--number">$130,729.12</div>
+                      </div>
+                      <div class="trending-item--right">
+                        <div class="trending-item--name">Best offer</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--timer"> <i class="fal fa-clock"> </i><span> 4hrs left</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trending-item"> 
+                  <div class="trending-item--top"> <img class="trending-item--img" src="./images/home/trending-2.jpg"/></div>
+                  <div class="trending-item--bottom"> 
+                    <div class="trending-item--collection">Collection name </div>
+                    <div class="trending-item--title">NFT name Ex Shiba Astronaut</div>
+                    <div class="trending-item--more">   
+                      <div class="trending-item--left"> 
+                        <div class="trending-item--name">Price</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--number">$130,729.12</div>
+                      </div>
+                      <div class="trending-item--right">
+                        <div class="trending-item--name">Best offer</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--timer"> <i class="fal fa-clock"> </i><span> 4hrs left</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trending-item"> 
+                  <div class="trending-item--top"> <img class="trending-item--img" src="./images/home/trending-3.jpg"/></div>
+                  <div class="trending-item--bottom"> 
+                    <div class="trending-item--collection">Collection name </div>
+                    <div class="trending-item--title">NFT name Ex Shiba Astronaut</div>
+                    <div class="trending-item--more">   
+                      <div class="trending-item--left"> 
+                        <div class="trending-item--name">Price</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--number">$130,729.12</div>
+                      </div>
+                      <div class="trending-item--right">
+                        <div class="trending-item--name">Best offer</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--timer"> <i class="fal fa-clock"> </i><span> 4hrs left</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trending-item"> 
+                  <div class="trending-item--top"> <img class="trending-item--img" src="./images/home/trending-5.jpg"/></div>
+                  <div class="trending-item--bottom"> 
+                    <div class="trending-item--collection">Collection name </div>
+                    <div class="trending-item--title">NFT name Ex Shiba Astronaut</div>
+                    <div class="trending-item--more">   
+                      <div class="trending-item--left"> 
+                        <div class="trending-item--name">Price</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--number">$130,729.12</div>
+                      </div>
+                      <div class="trending-item--right">
+                        <div class="trending-item--name">Best offer</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--timer"> <i class="fal fa-clock"> </i><span> 4hrs left</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="trending-item"> 
+                  <div class="trending-item--top"> <img class="trending-item--img" src="./images/home/trending-4.jpg"/></div>
+                  <div class="trending-item--bottom"> 
+                    <div class="trending-item--collection">Collection name </div>
+                    <div class="trending-item--title">NFT name Ex Shiba Astronaut</div>
+                    <div class="trending-item--more">   
+                      <div class="trending-item--left"> 
+                        <div class="trending-item--name">Price</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--number">$130,729.12</div>
+                      </div>
+                      <div class="trending-item--right">
+                        <div class="trending-item--name">Best offer</div>
+                        <div class="trending-item--strong">1.0 ETH</div>
+                        <div class="trending-item--timer"> <i class="fal fa-clock"> </i><span> 4hrs left</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="list"> 
+          <div class="list-container"> 
+            <div class="list-left"> 
+              <div class="list-left--card list-left--bottom"><img class="list-left--img" src="./images/home/brellias.jpg">
+                <div class="list-left--name">Brellias</div>
+                <div class="list-left--job">Art Director</div>
+              </div>
+              <div class="list-left--card list-left--top"><img class="list-left--img" src="./images/home/awkward-astronauts.jpg">
+                <div class="list-left--name">Awkward Astronauts</div>
+                <div class="list-left--job">Aditional info</div>
+              </div>
+            </div>
+            <div class="list-right">
+              <div class="list-right--title">List your art on MyNFT</div>
+              <div class="list-right--desc">Are you an artist or NFT project creator? Get in touch with us to get your content on Nifty Gateway!</div>
+              <div class="list-right--btn"> 
+                <div class="list-right--artist">I am an artist</div>
+                <div class="list-right--buyer"> 
+                  <div class="list-right--bg"> 
+                    <div class="list-right--text">I am a buyer</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="category"> 
+          <div class="category-container"> 
+            <div class="category-top"> 
+              <div class="category-top--title">Browse by category</div>
+            </div>
+            <div class="category-items"> 
+              <div class="category-list">
+                <div class="category-item"> 
+                  <div class="category-item--bg"> 
+                    <div class="category-item--left"><img class="category-item--img" src="./images/home/category-1.jpg"/></div>
+                    <div class="category-item--center"><img class="category-item--img" src="./images/home/category-2.jpg"/></div>
+                    <div class="category-item--right"><img class="category-item--img" src="./images/home/category-3.jpg"/></div>
+                    <div class="category-item--card"> 
+                      <div class="category-item--name">ART</div>
+                      <div class="category-item--more">28 items</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item"> 
+                  <div class="category-item--bg"> 
+                    <div class="category-item--left"><img class="category-item--img" src="./images/home/category-4.jpg"/></div>
+                    <div class="category-item--center"><img class="category-item--img" src="./images/home/category-5.jpg"/></div>
+                    <div class="category-item--right"><img class="category-item--img" src="./images/home/category-6.jpg"/></div>
+                    <div class="category-item--card"> 
+                      <div class="category-item--name">Music</div>
+                      <div class="category-item--more">28 items</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item"> 
+                  <div class="category-item--bg"> 
+                    <div class="category-item--left"><img class="category-item--img" src="./images/home/category-7.jpg"/></div>
+                    <div class="category-item--center"><img class="category-item--img" src="./images/home/category-8.jpg"/></div>
+                    <div class="category-item--right"><img class="category-item--img" src="./images/home/category-8.jpg"/></div>
+                    <div class="category-item--card"> 
+                      <div class="category-item--name">Collectibles</div>
+                      <div class="category-item--more">28 items</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item"> 
+                  <div class="category-item--bg"> 
+                    <div class="category-item--left"><img class="category-item--img" src="./images/home/category-9.jpg"/></div>
+                    <div class="category-item--center"><img class="category-item--img" src="./images/home/category-10.jpg"/></div>
+                    <div class="category-item--right"><img class="category-item--img" src="./images/home/category-11.jpg"/></div>
+                    <div class="category-item--card"> 
+                      <div class="category-item--name">Photograhpy</div>
+                      <div class="category-item--more">28 items</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="category-list">
+                <div class="category-item"> 
+                  <div class="category-item--bg"> 
+                    <div class="category-item--left"><img class="category-item--img" src="./images/home/category-12.jpg"/></div>
+                    <div class="category-item--center"><img class="category-item--img" src="./images/home/category-13.jpg"/></div>
+                    <div class="category-item--right"><img class="category-item--img" src="./images/home/awkward-astronauts.jpg"/></div>
+                    <div class="category-item--card"> 
+                      <div class="category-item--name">Trading card</div>
+                      <div class="category-item--more">28 items</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item"> 
+                  <div class="category-item--bg"> 
+                    <div class="category-item--left"><img class="category-item--img" src="./images/home/trending-4.jpg"/></div>
+                    <div class="category-item--center"><img class="category-item--img" src="./images/home/category-14.jpg"/></div>
+                    <div class="category-item--right"><img class="category-item--img" src="./images/home/category-15.jpg"/></div>
+                    <div class="category-item--card"> 
+                      <div class="category-item--name">Utility</div>
+                      <div class="category-item--more">28 items</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item"> 
+                  <div class="category-item--bg"> 
+                    <div class="category-item--left"><img class="category-item--img" src="./images/home/category-6.jpg"/></div>
+                    <div class="category-item--center"><img class="category-item--img" src="./images/home/category-16.jpg"/></div>
+                    <div class="category-item--right"><img class="category-item--img" src="./images/home/category-17.jpg"/></div>
+                    <div class="category-item--card"> 
+                      <div class="category-item--name">Sport</div>
+                      <div class="category-item--more">28 items</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item"> 
+                  <div class="category-item--bg"> 
+                    <div class="category-item--left"><img class="category-item--img" src="./images/home/trending-4.jpg"/></div>
+                    <div class="category-item--center"><img class="category-item--img" src="./images/home/category-18.jpg"/></div>
+                    <div class="category-item--right"><img class="category-item--img" src="./images/home/category-19.jpg"/></div>
+                    <div class="category-item--card"> 
+                      <div class="category-item--name">Virtual world</div>
+                      <div class="category-item--more">28 items</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="marketplace"> 
+          <div class="marketplace-container"> 
+            <div class="marketplace-left"> 
+              <div class="marketplace-left--title">The Premier Marketplace for NFTs</div>
+              <div class="marketplace-left--desc">MyNFT is the premier marketplace for item in blockchain, which are digital items you can truly own. Digital Items have existed for a long time, but never like this.</div>
+              <div class="marketplace-left--btn">Learn more</div>
+            </div>
+            <div class="marketplace-right"> <img class="marketplace-right--imgleft" src="./images/home/marketplace-1.jpg"><img class="marketplace-right--top" src="./images/home/marketplace-2.jpg"><img class="marketplace-right--bottom" src="./images/home/marketplace-3.jpg"></div>
+          </div>
+        </section>
+        <section class="youtube"> 
+          <div class="youtube-container"> 
+            <div class="youtube-bg"> 
+              <div class="youtube-bg--left"> 
+                <div class="youtube-bg--title">Why MyNFT</div>
+                <div class="youtube-bg--desc">Are you an artist or NFT project creator? Get in touch with us to get your content on Nifty Gateway!</div>
+                <div class="youtube-bg--btn"> <span>Explore the marketplace </span><i class="fal fa-arrow-right"></i></div>
+              </div>
+              <div class="youtube-video">
+                <div class="youtube-video--title"> <img class="youtube-video--logo" src="./images/logo/Logo.png">
+                  <div class="youtube-video--name"> Why MyNFT? | The NFT marketplace with everything for everyone</div>
+                </div><img class="youtube-video--play" src="./images/icons/ic-play.png">
+                <div class="youtube-video--sign">
+                  <div class="youtube-video--text">Watch on</div><img class="youtube-video--icon" src="./images/icons/ic-ytb.png"><span>YouTube</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sell"> 
+          <div class="sell-container"> 
+            <div class="sell-top"> 
+              <div class="sell-top--title">Create and Sell your NFTs</div>
+            </div>
+            <div class="sell-list">
+              <div class="sell-item"> <img class="sell-item--icon" src="./images/icons/Wallet.png"/>
+                <div class="sell-item--title">Set up your wallet</div>
+                <div class="sell-item--desc">Choose between auctions, fixed-price listings, and declining-price listings. We will help to sell your NFTs!</div>
+              </div>
+              <div class="sell-item"> <img class="sell-item--icon" src="./images/icons/Category.png"/>
+                <div class="sell-item--title">Create your collection</div>
+                <div class="sell-item--desc">Set up your collection. Add social links, a description, profile &amp; banner images, and set a secondary sales fee.</div>
+              </div>
+              <div class="sell-item"> <img class="sell-item--icon" src="./images/icons/Image.png"/>
+                <div class="sell-item--title">Add your NFTs</div>
+                <div class="sell-item--desc">Upload your work (image, video, audio, or 3D art), add a title and description, properties, and unlockable content.</div>
+              </div>
+              <div class="sell-item"> <img class="sell-item--icon" src="./images/icons/Send.png"/>
+                <div class="sell-item--title">List them for sale</div>
+                <div class="sell-item--desc">Choose between auctions, fixed-price listings, and declining-price listings. We will help to sell your NFTs!</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="app"> 
+          <div class="app-container"> 
+            <div class="app-bg"> 
+              <div class="app-bg--left"> 
+                <div class="app-bg--desc"><strong class="app-bg--strong"> Download MyNFTs app </strong> to track your NFT portfolio and discover drops</div>
+                <div class="app-bg--buttons"> 
+                  <div class="app-bg--btn"> <i class="fab fa-apple"></i><span>App Store</span></div>
+                  <div class="app-bg--btn"> <i class="fab fa-google"> </i><span>Google play</span></div>
+                </div>
+              </div><img class="app-bg--center" src="./images/home/app-1.png">
+              <div class="app-bg--right"><img class="app-bg--qr" src="./images/home/app-2.png">
+                <div class="app-bg--detail"> <i class="fal fa-arrow-left"> </i><span>Scan to download MyNFT app</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"> 
+        <div class="footer-container"> 
+          <div class="footer-details"> <a class="footer-details--logo" href="#"> <img src="./images/logo/Logo.png" alt=""><span>MyNFT.com</span></a>
+            <div class="footer-details--text">The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</div>
+          </div>
+          <div class="footer-list"> 
+            <div class="footer-menu">Market Place<a class="footer-menu--item" href="404.html">Home</a><a class="footer-menu--item" href="404.html">How it works</a><a class="footer-menu--item" href="404.html">Jobs</a><a class="footer-menu--item" href="404.html">Help center</a><a class="footer-menu--item" href="404.html">Blogs</a>
+            </div>
+            <div class="footer-menu">Company<a class="footer-menu--item" href="404.html">About Us</a><a class="footer-menu--item" href="404.html">Contact Us</a><a class="footer-menu--item" href="404.html">Feature</a><a class="footer-menu--item" href="404.html">Discover</a>
+            </div>
+            <div class="footer-list--contact"> 
+              <div class="footer-list--updates"> 
+                <div class="footer-list--text">Get our lastest updates</div>
+                <div class="footer-list--email"><i class="fal fa-envelope footer-list--icon"></i>
+                  <input class="footer-list--input" type="text" placeholder="Your email">
+                  <button class="footer-list--btn">Subcribe</button>
+                </div>
+              </div>
+              <div class="footer-list--comunity">
+                <div class="footer-list--text">Join our comunity</div>
+                <div class="footer-list--socials"><a class="footer-list--social" href=""><img src="./images/icons/twitter.png"></a><a class="footer-list--social" href=""><img src="./images/icons/facebook.png"></a><a class="footer-list--social"><img src="./images/icons/instagram.png"></a><a class="footer-list--social" href=""><img src="./images/icons/youtube.png"></a><a class="footer-list--social" href=""><img src="./images/icons/tele.png"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./scripts/main.js"></script>
+      <script src="./scripts/artist.js"></script>
+      <script src="./scripts/collection.js"></script>
+      <script src="./scripts/all_nfts.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website NFTs Demo</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/fontawesome.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header-logo"> <img class="header-img" src="./images/Logo/Logo.png"></div>
+        <div class="header-list"> 
+          <div class="header-menu">
+            <div class="header-menu--list"> <a class="header-menu--item" href="index.html">Home </a><a class="header-menu--item" href="marketplace.html">Market Place</a><a class="header-menu--item" href="all_nfts.html">All NFTs</a><a class="header-menu--item" href="activities.html">Activities</a></div>
+            <div class="header-menu--dots"> <span class="header-menu--dot"></span><span class="header-menu--dot"></span><span class="header-menu--dot"></span></div><i class="fa fa-search header-menu--search"></i>
+            <div class="header-menu--btn"><span class="header-menu--desc">Connect wallet</span></div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <section class="artist-banner"> 
+          <div class="artist-banner--container"> 
+            <div class="artist-banner--bg"> <img class="artist-banner--icon" src="./images/icons/more-vertical.png" alt="">
+              <div class="artist-banner--content"> 
+                <div class="artist-banner--info"> 
+                  <div class="artist-banner--avatar">    <img class="artist-banner--img" src="./images/home/trending-4.jpg" alt=""><img class="artist-banner--check" src="./images/icons/check.png" alt=""></div>
+                  <div class="artist-banner--more">
+                    <div class="artist-banner--name">A$AP Rocky <span>Following</span></div>
+                    <div class="artist-banner--someone">@0xogpassby0xstudio</div>
+                    <div class="artist-banner--followers"> 
+                      <div class="artist-banner--followers--img"> <img src="./images/follower-1.jpg" alt=""><img src="./images/follower-2.jpg" alt=""><img src="./images/follower-3.jpg" alt=""></div>
+                      <div class="artist-banner--followers--text">Followed by trina, gatsby_45 and 1,234 others</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="artist-banner--contact">
+                  <div class="artist-banner--social">twitter: ascac</div>
+                  <div class="artist-banner--social">insta: @agsastda</div>
+                  <div class="artist-banner--address"> 
+                    <div class="artist-banner--text">View porfolio</div><i class="fal fa-arrow-up artist-banner--link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="artist-tab"> 
+          <div class="artist-tab--container"> 
+            <div class="artist-tab--list"> 
+              <div class="artist-tab--item" data-link="tab_collection">Collection (5)</div>
+              <div class="artist-tab--item active" data-link="tab_nfts">NFTs (14)</div>
+            </div><a class="artist-tab--profile" href="#">View artist’s profile</a>
+          </div>
+        </section>
+        <section class="artist-tabcontent artist-nfts" id="tab_nfts"> 
+          <section class="filter"> 
+            <div class="filter-container"> 
+              <div class="filter-btn"> <img class="filter-btn--icon" src="./images/icons/sliders.png">
+                <div class="filter-text">Filters</div>
+              </div>
+              <div class="filter-reload">F5</div>
+              <div class="filter-search"> <i class="fal fa-search filter-search--icon"></i>
+                <input class="filter-search--input" placeholder="Search NFTs" type="text">
+              </div>
+              <div class="filter-price"> 
+                <div class="filter-text">Price: Low to high</div><i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="filter-sort">
+                <div class="filter-sort--describe"><img class="filter-sort--icon" src="./images/icons/bar-chart-2.png" alt="icon">
+                  <div class="filter-text">Sort by</div>
+                </div>
+                <div class="filter-sort--select">
+                  <div class="filter-sort--option">Recent</div><i class="fas fa-chevron-down filter-sort--icon"> </i>
+                </div>
+              </div>
+              <div class="filter-listcustom"><img class="filter-listcustom--card" src="./images/icons/grid-2.png" id="gird-3"><img class="filter-listcustom--card filter-listcustom--active" src="./images/icons/grid-active.png" id="grid-4"></div>
+            </div>
+          </section>
+          <section class="result"> 
+            <div class="result-container"> 
+              <div class="result-top">
+                <div class="result-top--total"> 
+                  <div class="result-top--text">Total: </div>
+                  <div class="result-top--quantity">2,789 items</div>
+                </div>
+                <div class="result-top--update">
+                  <div class="result-top--text">Last update: </div>
+                  <div class="result-top--quantity">3 min ago</div>
+                </div>
+              </div>
+              <div class="result-list">
+                <div class="tab-filter"> 
+                  <div class="tab-explore tab-borderbottom">
+                    <div class="tab-explore--item"> <img class="tab-explore--img" src="./images/icons/coin.png">
+                      <div class="tab-explore--info"> 
+                        <div class="tab-explore--text">Explore</div>
+                        <div class="tab-explore--name">Ethereum Blockchain</div>
+                      </div>
+                    </div><i class="fas fa-chevron-down tab-icon"></i>
+                  </div>
+                  <div class="tab-status tab-borderbottom">
+                    <div class="tab-top" id="status"> 
+                      <div class="tab-text">Status</div><i class="fas fa-chevron-down tab-icon"> </i>
+                    </div>
+                    <div class="tab-status--content">
+                      <div class="tab-status--item tab-item--active">All </div>
+                      <div class="tab-status--item">Open for offers</div>
+                      <div class="tab-status--item">Live auctions</div>
+                      <div class="tab-status--item">Not for sale </div>
+                      <div class="tab-status--item">Buy now</div>
+                    </div>
+                  </div>
+                  <div class="tab-price tab-borderbottom">
+                    <div class="tab-top" id="price">
+                      <div class="tab-text">Price</div><i class="fas fa-chevron-down tab-icon change-icon"></i>
+                    </div>
+                    <div class="tab-price--content tab-show">
+                      <div class="tab-price--select"> 
+                        <div class="tab-price--text">Currency:</div>
+                        <div class="tab-price--options">
+                          <div class="tab-price--option">ETH</div><i class="fas fa-chevron-down tab-icon"></i>
+                        </div>
+                      </div>
+                      <div class="tab-price--between"> 
+                        <input class="tab-price--input" type="text" placeholder="Min">
+                        <div class="tab-price--desc">To</div>
+                        <input class="tab-price--input" type="text" placeholder="Max">
+                      </div>
+                      <button class="tab-price--btn">Apply</button>
+                    </div>
+                  </div>
+                  <div class="tab-type tab-borderbottom">
+                    <div class="tab-top" id="type"> 
+                      <div class="tab-text">Type</div><i class="fas fa-chevron-down tab-icon change-icon"></i>
+                    </div>
+                    <div class="tab-type--content tab-show">
+                      <div class="tab-type--item tab-item--active">All </div>
+                      <div class="tab-type--item">Multiple editions</div>
+                      <div class="tab-type--item">Single editions</div>
+                    </div>
+                  </div>
+                  <div class="tab-option tab-borderbottom">
+                    <div class="tab-top" id="options">
+                      <div class="tab-text">Options</div><i class="fas fa-chevron-down tab-icon change-icon"> </i>
+                    </div>
+                    <div class="tab-option--content tab-show">
+                      <div class="tab-option--checkbox"> 
+                        <input class="tab-option--input" type="checkbox" value="Verified only" id="verified">
+                        <label class="tab-option--label" for="verified"> Verified only</label>
+                      </div>
+                      <div class="tab-option--checkbox"> 
+                        <input class="tab-option--input" type="checkbox" value="Show lazy minted items" id="show">
+                        <label class="tab-option--label" for="show"> Show lazy minted items</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-collection tab-borderbottom">
+                    <div class="tab-top" id="collection">
+                      <div class="tab-text">Collections</div><i class="fas fa-chevron-down tab-icon change-icon"> </i>
+                    </div>
+                    <div class="tab-collection--content tab-show"> 
+                      <div class="tab-collection--result"> 
+                        <div class="tab-collection--author"><img class="tab-collection--img" src="./images/home/trending-4.jpg" alt="">
+                          <div class="tab-collection--info">
+                            <div class="tab-collection--name">Yura Mirion</div>
+                            <div class="tab-collection--floor">Floor: 13 ETH</div>
+                          </div>
+                        </div><img class="tab-collection--icon" src="./images/icons/x.png">
+                      </div>
+                      <div class="tab-collection--search"><i class="fal fa-search"> </i>
+                        <input class="tab-collection--input" text="text" placeholder="Search">
+                      </div>
+                      <div class="tab-property tab-borderbottom" id="property_1">
+                        <div class="tab-property--top">
+                          <div class="tab-text">Property name</div>
+                          <div class="tab-property--more"> 
+                            <div class="tab-property--number">2</div><i class="fas fa-chevron-down tab-property--subicon change-icon"></i>
+                          </div>
+                        </div>
+                        <div class="tab-property--content tab-show">
+                          <div class="tab-property--item"> 
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="17" id="1_17_property_1"/>
+                              <label class="tab-option--label" for="1_17_property_1">Property 1</label>
+                            </div>
+                            <div class="tab-property--quantity">17</div>
+                          </div>
+                          <div class="tab-property--item">
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="15" id="1_15_property_2"/>
+                              <label class="tab-option--label" for="1_15_property_2">Property 2</label>
+                            </div>
+                            <div class="tab-property--quantity">15</div>
+                          </div>
+                          <div class="tab-property--item">
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="8" id="1_8_property_3"/>
+                              <label class="tab-option--label" for="1_8_property_3">Property 3</label>
+                            </div>
+                            <div class="tab-property--quantity">8</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-property tab-borderbottom" id="property_2">
+                        <div class="tab-property--top">
+                          <div class="tab-text">Property name</div>
+                          <div class="tab-property--more"> 
+                            <div class="tab-property--number">2</div><i class="fas fa-chevron-down tab-property--subicon"></i>
+                          </div>
+                        </div>
+                        <div class="tab-property--content">
+                          <div class="tab-property--item"> 
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="17" id="2_17_property_1"/>
+                              <label class="tab-option--label" for="2_17_property_1">Property 1</label>
+                            </div>
+                            <div class="tab-property--quantity">17</div>
+                          </div>
+                          <div class="tab-property--item">
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="15" id="2_15_property_2"/>
+                              <label class="tab-option--label" for="2_15_property_2">Property 2</label>
+                            </div>
+                            <div class="tab-property--quantity">15</div>
+                          </div>
+                          <div class="tab-property--item">
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="8" id="2_8_property_3"/>
+                              <label class="tab-option--label" for="2_8_property_3">Property 3</label>
+                            </div>
+                            <div class="tab-property--quantity">8</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-property tab-borderbottom" id="property_3">
+                        <div class="tab-property--top">
+                          <div class="tab-text">Property name</div>
+                          <div class="tab-property--more"> 
+                            <div class="tab-property--number">12</div><i class="fas fa-chevron-down tab-property--subicon"></i>
+                          </div>
+                        </div>
+                        <div class="tab-property--content">
+                          <div class="tab-property--item"> 
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="17" id="3_17_property_1"/>
+                              <label class="tab-option--label" for="3_17_property_1">Property 1</label>
+                            </div>
+                            <div class="tab-property--quantity">17</div>
+                          </div>
+                          <div class="tab-property--item">
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="15" id="3_15_property_2"/>
+                              <label class="tab-option--label" for="3_15_property_2">Property 2</label>
+                            </div>
+                            <div class="tab-property--quantity">15</div>
+                          </div>
+                          <div class="tab-property--item">
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="8" id="3_8_property_3"/>
+                              <label class="tab-option--label" for="3_8_property_3">Property 3</label>
+                            </div>
+                            <div class="tab-property--quantity">8</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-property tab-borderbottom" id="property_4">
+                        <div class="tab-property--top">
+                          <div class="tab-text">Property name</div>
+                          <div class="tab-property--more"> 
+                            <div class="tab-property--number">8</div><i class="fas fa-chevron-down tab-property--subicon"></i>
+                          </div>
+                        </div>
+                        <div class="tab-property--content">
+                          <div class="tab-property--item"> 
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="17" id="4_17_property_1"/>
+                              <label class="tab-option--label" for="4_17_property_1">Property 1</label>
+                            </div>
+                            <div class="tab-property--quantity">17</div>
+                          </div>
+                          <div class="tab-property--item">
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="15" id="4_15_property_2"/>
+                              <label class="tab-option--label" for="4_15_property_2">Property 2</label>
+                            </div>
+                            <div class="tab-property--quantity">15</div>
+                          </div>
+                          <div class="tab-property--item">
+                            <div class="tab-property--checkbox"> 
+                              <input class="tab-option--input" type="checkbox" value="8" id="4_8_property_3"/>
+                              <label class="tab-option--label" for="4_8_property_3">Property 3</label>
+                            </div>
+                            <div class="tab-property--quantity">8</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-items"> <a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-1.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-2.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-3.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-4.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-5.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-6.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-7.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-8.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-9.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-10.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-11.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a><a class="result-item" href="#"> 
+                    <div class="result-item--top"> <img class="result-item--img" src="./images/all_nfts/all-nfts-12.jpg"/></div>
+                    <div class="result-item--content"> 
+                      <div class="result-item--info">
+                        <div class="result-item--collection">Collection name</div>
+                        <div class="result-item--name">NFT name Ex Shiba Astronaut</div>
+                      </div>
+                      <div class="result-item--more">
+                        <div class="result-item--left">
+                          <div class="result-item--text">Price</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other">$130,729.12</div>
+                        </div>
+                        <div class="result-item--right">
+                          <div class="result-item--text">Best offers</div>
+                          <div class="result-item--desc">1.0 ETH</div>
+                          <div class="result-item--other"> <i class="fal fa-clock"></i><span> 4hrs left</span></div>
+                        </div>
+                      </div>
+                    </div></a>
+                  <div class="explore-artist--loading"> <i class="fas fa-spinner explore-artist--loading--icon"> </i>
+                    <div class="explore-artist--loading--text">Loading</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="artist-tabcontent" id="tab_collection">
+          <div class="artist-collection--container"> 
+            <section class="artist-filter"> 
+              <div class="artist-filter--container"> 
+                <div class="artist-filter--result"> 
+                  <div class="artist-filter--total">Total: </div>
+                  <div class="artist-filter--number">2,798 Collections</div>
+                </div>
+                <div class="artist-filter--options"> 
+                  <div class="artist-filter--search"> <i class="fal fa-search"> </i>
+                    <input type="text" placeholder="Search item">
+                  </div>
+                  <div class="artist-filter--blockchain"> 
+                    <div class="artist-filter--text">All blockchains </div><i class="fas fa-chevron-down"></i>
+                  </div>
+                  <div class="artist-filter--sort">
+                    <div class="artist-filter--text"> <img src="./images/icons/bar-chart-2.png" alt=""><span>Sort by </span></div>
+                    <div class="artist-filter--select"> <span>Recent</span><i class="fas fa-chevron-down"></i></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="artist-list--collection">
+              <div class="artist-list--container"> 
+                <div class="artist-list--list"> 
+                  <div class="artist-list--item"> 
+                    <div class="artist-list--other"> 
+                      <div class="artist-list--info"> 
+                        <div class="artist-list--name">
+                          <div class="artist-list--text">ROCKY</div>
+                          <div class="artist-list--author"> by A$AP Rocky</div>
+                        </div>
+                        <div class="artist-list--datetime">Thursday, April 22nd, 2021 at 5:30 AM</div>
+                      </div>
+                      <div class="artist-list--gallery">
+                        <div class="artist-list--gallery4"><img class="artist-list--img" src="./images/artist/artist-collection-2.jpg" alt=""/><img class="artist-list--img" src="./images/artist/artist-collection-3.jpg" alt=""/><img class="artist-list--img" src="./images/artist/artist-collection-4.jpg" alt=""/>
+                          <div class="artist-list--img"><img src="./images/artist/artist-collection-5.jpg" alt=""/>
+                            <div class="artist-list--desc"><span> +12 </span> Other items in this collections </div>
+                          </div>
+                        </div>
+                        <div class="artist-list--more"> <a class="artist-list--btn" href="">View Collection</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="artist-list--item"> 
+                    <div class="artist-list--other"> 
+                      <div class="artist-list--info"> 
+                        <div class="artist-list--name">
+                          <div class="artist-list--text">ROCKY</div>
+                          <div class="artist-list--author"> by A$AP Rocky</div>
+                        </div>
+                        <div class="artist-list--datetime">Thursday, April 22nd, 2021 at 5:30 AM</div>
+                      </div>
+                      <div class="artist-list--gallery">
+                        <div class="artist-list--gallery3"><img class="artist-list--img" src="./images/artist/artist-collection-6.jpg" alt=""/><img class="artist-list--img" src="./images/artist/artist-collection-7.jpg" alt=""/><img class="artist-list--img" src="./images/artist/artist-collection-8.jpg" alt=""/>
+                        </div>
+                        <div class="artist-list--more"> <a class="artist-list--btn" href="">View Collection</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="artist-list--item"> 
+                    <div class="artist-list--other"> 
+                      <div class="artist-list--info"> 
+                        <div class="artist-list--name">
+                          <div class="artist-list--text">ROCKY</div>
+                          <div class="artist-list--author"> by A$AP Rocky</div>
+                        </div>
+                        <div class="artist-list--datetime">Thursday, April 22nd, 2021 at 5:30 AM</div>
+                      </div>
+                      <div class="artist-list--gallery">
+                        <div class="artist-list--gallery4"><img class="artist-list--img" src="./images/artist/artist-collection-9.jpg" alt=""/><img class="artist-list--img" src="./images/artist/artist-collection-10.jpg" alt=""/><img class="artist-list--img" src="./images/artist/artist-collection-11.jpg" alt=""/>
+                          <div class="artist-list--img"><img src="./images/artist/artist-collection-12.jpg" alt=""/>
+                            <div class="artist-list--desc"><span> +12 </span> Other items in this collections </div>
+                          </div>
+                        </div>
+                        <div class="artist-list--more"> <a class="artist-list--btn" href="">View Collection</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="artist-list--item"> 
+                    <div class="artist-list--other"> 
+                      <div class="artist-list--info"> 
+                        <div class="artist-list--name">
+                          <div class="artist-list--text">ROCKY</div>
+                          <div class="artist-list--author"> by A$AP Rocky</div>
+                        </div>
+                        <div class="artist-list--datetime">Thursday, April 22nd, 2021 at 5:30 AM</div>
+                      </div>
+                      <div class="artist-list--gallery">
+                        <div class="artist-list--gallery2"><img class="artist-list--img" src="./images/artist/artist-collection-13.jpg" alt=""/><img class="artist-list--img" src="./images/artist/artist-collection-14.jpg" alt=""/>
+                        </div>
+                        <div class="artist-list--more"> <a class="artist-list--btn" href="">View Collection</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+      <footer class="footer"> 
+        <div class="footer-container"> 
+          <div class="footer-details"> <a class="footer-details--logo" href="#"> <img src="./images/logo/Logo.png" alt=""><span>MyNFT.com</span></a>
+            <div class="footer-details--text">The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</div>
+          </div>
+          <div class="footer-list"> 
+            <div class="footer-menu">Market Place<a class="footer-menu--item" href="404.html">Home</a><a class="footer-menu--item" href="404.html">How it works</a><a class="footer-menu--item" href="404.html">Jobs</a><a class="footer-menu--item" href="404.html">Help center</a><a class="footer-menu--item" href="404.html">Blogs</a>
+            </div>
+            <div class="footer-menu">Company<a class="footer-menu--item" href="404.html">About Us</a><a class="footer-menu--item" href="404.html">Contact Us</a><a class="footer-menu--item" href="404.html">Feature</a><a class="footer-menu--item" href="404.html">Discover</a>
+            </div>
+            <div class="footer-list--contact"> 
+              <div class="footer-list--updates"> 
+                <div class="footer-list--text">Get our lastest updates</div>
+                <div class="footer-list--email"><i class="fal fa-envelope footer-list--icon"></i>
+                  <input class="footer-list--input" type="text" placeholder="Your email">
+                  <button class="footer-list--btn">Subcribe</button>
+                </div>
+              </div>
+              <div class="footer-list--comunity">
+                <div class="footer-list--text">Join our comunity</div>
+                <div class="footer-list--socials"><a class="footer-list--social" href=""><img src="./images/icons/twitter.png"></a><a class="footer-list--social" href=""><img src="./images/icons/facebook.png"></a><a class="footer-list--social"><img src="./images/icons/instagram.png"></a><a class="footer-list--social" href=""><img src="./images/icons/youtube.png"></a><a class="footer-list--social" href=""><img src="./images/icons/tele.png"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./scripts/main.js"></script>
+      <script src="./scripts/collection.js"></script>
+      <script src="./scripts/artist_collection.js"></script>
+      <script src="./scripts/all_nfts.js"></script>
+    </div>
+  </body>
+</html>

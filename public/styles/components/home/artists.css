@@ -1,0 +1,141 @@
+.artist {
+  padding-bottom: 132px;
+}
+.artist-items {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.artist-list {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+}
+.artist-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.artist-item--icon {
+  scale: 0.8;
+}
+.artist-item--left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 73%;
+}
+.artist-item--right {
+  width: 27%;
+  text-align: right;
+}
+.artist-item--number {
+  font-size: 20px;
+  font-weight: 500;
+  color: #11315b;
+}
+.artist-item--avatar {
+  position: relative;
+}
+.artist-item--img {
+  width: 60px;
+  height: 60px;
+  border: 4px solid white;
+  object-fit: cover;
+  flex: 1 0 0;
+  border-radius: 50%;
+}
+.artist-item--check {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.artist-item--after {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.artist-item--after::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(33, 32, 74, 0.5490196078);
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.artist-item--imgfollower {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+.artist-item--imgfollower:not(:nth-child(3)) {
+  margin-right: -5px;
+}
+.artist-item--imgfollower:nth-child(2) {
+  z-index: 10;
+}
+.artist-item--imgfollower:nth-child(1) {
+  z-index: 10;
+}
+.artist-item--name {
+  margin-bottom: 4px;
+  color: #451254;
+  font-size: 18px;
+  font-weight: bold;
+}
+.artist-item--follow {
+  display: flex;
+  gap: 4px;
+  flex-direction: row;
+}
+.artist-item--followers {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.artist-item--other {
+  color: #9d9bb9;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .artist {
+    padding-bottom: 30px;
+  }
+  .artist-list {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .artist {
+    padding-bottom: 30px;
+  }
+  .artist :where(.autions-top--select) {
+    white-space: pre;
+  }
+  .artist-items {
+    margin-top: 24px;
+    gap: 12px;
+  }
+  .artist-list {
+    gap: 12px;
+  }
+  .artist-item--name {
+    font-size: 13px;
+  }
+  .artist-item--numberfollowers {
+    font-size: 12px;
+  }
+  .artist-item--other {
+    font-size: 10px;
+  }
+}

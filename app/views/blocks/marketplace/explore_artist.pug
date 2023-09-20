@@ -1,0 +1,39 @@
+section.explore-artist 
+    .explore-artist--container 
+        .explore-artist--top 
+            .explore-artist--title Explore Artists
+            .explore-artist--result 
+                .explore-artist--total
+                    .explore-artist--text Total:
+                    span.explore-artist--quantity  2,798 artists
+                .explore-artist--options 
+                    .explore-artist--status 
+                        .explore-artist--status--option Status: Verified
+                        i.fal.fa-chevron-down.explore-artist--status--icon 
+                    .explore-artist--search 
+                        i.fal.fa-search.explore-artist--icon
+                        input.explore-artist--input(placeholder="Input text")
+                    .explore-artist--sort
+                        .explore-artist--sort--describe
+                            img(src="./images/icons/bar-chart-2.png", alt="icon").explore-artist--sort--icon
+                            .explore-artist--sort--text Sort by
+                        .explore-artist--sort--select
+                            .explore-artist--sort--option Recent
+                            i.fal.fa-chevron-down.explore-artist--sort--icon 
+        .explore-artist--list
+            +exploreArtistItem("./images/marketplace/explore-artist-1.jpg", "./images/marketplace/artist-1.jpg", "Xuân Lộc", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-2.jpg", "./images/marketplace/artist-2.jpg", "Blake Kathryn", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-3.jpg", "./images/marketplace/artist-3.jpg", "Xsullo Studio", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-4.jpg", "./images/marketplace/artist-4.jpg", "Cameron Williamson", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-5.jpg", "./images/marketplace/artist-5.jpg", "Marvin McKinney", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-6.jpg", "./images/marketplace/artist-6.jpg", "Jacob Jones", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-7.jpg", "./images/marketplace/artist-7.jpg", "Cody Fisher", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-8.jpg", "./images/marketplace/artist-8.jpg", "Theresa Webb", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-9.jpg", "./images/marketplace/artist-9.jpg", "Leslie Alexander", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-10.jpg", "./images/marketplace/artist-10.jpg", "Eleanor Pena", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-11.jpg", "./images/marketplace/artist-11.jpg", "Savannah Nguyen", "Aditional info") 
+            +exploreArtistItem("./images/marketplace/explore-artist-12.jpg", "./images/marketplace/artist-12.jpg", "Darrell Steward", "Aditional info") 
+            .explore-artist--loading 
+                i.fas.fa-spinner.explore-artist--loading--icon 
+                .explore-artist--loading--text Loading
+        

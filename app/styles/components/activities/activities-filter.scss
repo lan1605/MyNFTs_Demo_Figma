@@ -1,0 +1,94 @@
+@import "../../helpers/mixins";
+.activities-filter {
+  width: 25%;
+
+  &--title {
+    color: #476285;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 0 16px 0;
+  }
+  &--list {
+    display: flex;
+    gap: 12px 8px;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    width: 80%;
+  }
+  &--item {
+    padding: 8px 10px;
+    border-radius: 12px;
+    border: 1px solid #bdcadb;
+    background: #fafcff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &--form {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid #bdcadb;
+  }
+  &--search {
+    @include styleForSelect();
+    cursor: text;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &--input {
+    border: none;
+    outline: none;
+    width: 95%;
+    background: #fafcff;
+    color: #9d9bb9;
+    &::placeholder {
+      color: #9d9bb9;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  &--btn {
+    width: 100%;
+    color: #11315b;
+    font-weight: 500;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    background: #cde2fe;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1023px) {
+    width: 30%;
+    &--list {
+      width: unset;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    width: unset;
+    &--item {
+      font-size: 12px;
+    }
+    &--title {
+      font-size: 16px;
+    }
+    &--input {
+      font-size: 14px;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    &--btn {
+      font-size: 14px;
+    }
+  }
+}
+.item-active {
+  color: white;
+  background: #11315b;
+  border-color: #11315b;
+}

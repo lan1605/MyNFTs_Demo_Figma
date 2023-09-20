@@ -1,0 +1,28 @@
+section.popular 
+    .popular-container 
+        .autions-top 
+            .autions-top--left 
+                .popular--title Popular Collections
+                .popular-options 
+                    .autions-top--select 
+                        .autions-top--desc Ethereum
+                        i.fa.fa-chevron-down
+                    .popular-toggle 
+                        .popular-toggle--option Today 
+                        .popular-toggle--option.option-active This week 
+                        .popular-toggle--option This month
+            .autions-top--right
+                .autions-top--all See all
+                .autions-top--btn 
+                    .autions-top--arrow#left.action--btn
+                        i.fal.fa-arrow-left
+                    .autions-top--arrow#right
+                        i.fal.fa-arrow-right
+        .popular-items 
+            .popular-list 
+                +popularItem("./images/home/img-popular-1.jpg", "./images/home/img-popular-2.jpg", "./images/home/img-popular-3.jpg", "./images/home/img-popular-4.jpg", "NFT name Ex Shiba Astronaut",
+                "Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%")
+                +popularItem("./images/home/img-popular-6.jpg", "./images/home/img-popular-5.jpg", "./images/home/img-popular-7.jpg", "./images/home/img-popular-8.jpg", "NFT name Ex Shiba Astronaut",
+                "Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%")
+                +popularItem("./images/home/img-popular-9.jpg", "./images/home/img-popular-10.jpg", "./images/home/img-popular-11.jpg", "./images/home/img-popular-12.jpg", "NFT name Ex Shiba Astronaut",
+                "Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%")

@@ -1,0 +1,28 @@
+section.trending 
+    .trending-container 
+        .autions-top 
+            .autions-top--left 
+                .popular--title Trending NFTs
+                .popular-options
+                    .autions-top--select 
+                        .autions-top--desc Ethereum
+                        i.fa.fa-chevron-down
+                    .popular-toggle 
+                        .popular-toggle--option.option-active Today 
+                        .popular-toggle--option This week 
+                        .popular-toggle--option This month
+            .autions-top--right
+                .autions-top--all See all
+                .autions-top--btn 
+                    .autions-top--arrow#left.action--btn
+                        i.fal.fa-arrow-left
+                    .autions-top--arrow#right
+                        i.fal.fa-arrow-right
+        .trending-list  
+            .trending-items 
+                +trendingItem("./images/home/trending-1.jpg", "NFT name Ex Shiba Astronaut", "1.0 ETH","$130,729.12", "1.0 ETH", " 4hrs left")
+                +trendingItem("./images/home/trending-2.jpg", "NFT name Ex Shiba Astronaut", "1.0 ETH","$130,729.12", "1.0 ETH", " 4hrs left")
+                +trendingItem("./images/home/trending-3.jpg", "NFT name Ex Shiba Astronaut", "1.0 ETH","$130,729.12", "1.0 ETH", " 4hrs left")
+                +trendingItem("./images/home/trending-5.jpg", "NFT name Ex Shiba Astronaut", "1.0 ETH","$130,729.12", "1.0 ETH", " 4hrs left")
+                +trendingItem("./images/home/trending-4.jpg", "NFT name Ex Shiba Astronaut", "1.0 ETH","$130,729.12", "1.0 ETH", " 4hrs left")
+        

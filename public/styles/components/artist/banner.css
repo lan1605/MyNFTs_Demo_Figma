@@ -1,0 +1,123 @@
+.artist-banner--container {
+  padding-top: 56px;
+}
+.artist-banner--bg {
+  background: linear-gradient(0deg, #081320 0%, rgba(9, 32, 64, 0.9) 18.23%, rgba(4, 39, 84, 0.83) 30.24%, rgba(0, 56, 130, 0.69) 52.23%, rgba(0, 50, 115, 0) 100%), url("../../../images/banner/banner-collection-artist.jpg") 100% 50%/cover no-repeat;
+  min-height: 150px;
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+.artist-banner--icon {
+  text-align: right;
+  width: 24px;
+  padding: 4px;
+  height: 24px;
+  background: rgba(177, 177, 179, 0.4);
+  border-radius: 20px;
+  float: right;
+  cursor: pointer;
+}
+.artist-banner--content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.artist-banner--avatar {
+  width: 76px;
+  height: 76px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+.artist-banner--img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.artist-banner--check {
+  position: absolute;
+  bottom: 0px;
+  right: -10px;
+}
+.artist-banner--info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.artist-banner--name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 6px;
+}
+.artist-banner--name span {
+  background: linear-gradient(214deg, #0698f9 0%, #f906f9 100%);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.artist-banner--someone {
+  color: #bdcadb;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 13px;
+}
+.artist-banner--someone span {
+  color: #e9ecf2;
+  font-weight: 500;
+}
+.artist-banner--updated {
+  font-size: 12px;
+  font-weight: 400;
+  color: #bdcadb;
+}
+.artist-banner--contact {
+  text-align: right;
+  color: #fafcff;
+  font-size: 12px;
+}
+.artist-banner--social {
+  font-weight: 400;
+}
+.artist-banner--address {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 500;
+}
+.artist-banner--address span {
+  font-weight: 700;
+}
+.artist-banner--followers {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.artist-banner--followers--img {
+  display: flex;
+  align-items: flex-start;
+  gap: -6px;
+}
+.artist-banner--followers--img img {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: -6px;
+}
+.artist-banner--followers--text {
+  color: #fafcff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.artist-banner--link {
+  transform: rotate(45deg);
+}

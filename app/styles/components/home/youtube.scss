@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+.youtube {
+  &-container {
+    padding-bottom: 132px;
+  }
+  &-bg {
+    border-radius: 20px;
+    min-height: 400px;
+    background: linear-gradient(
+        181deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url("../../../images/banner/banner-youtube.jpg") center,
+      lightgray 100% / cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 70px;
+    &--left {
+      width: 50%;
+    }
+    &--title {
+      font-size: 32px;
+      color: white;
+      font-weight: 600;
+      padding-bottom: 32px;
+    }
+    &--desc {
+      color: #e9ecf2;
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 32px;
+    }
+    &--btn {
+      padding: 12px 16px;
+      background: linear-gradient(214deg, #0698f9 0%, #f906f9 100%);
+      background-size: 130% auto;
+      transition: 0.5s;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      //   display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-direction: row;
+      &:hover {
+        background-position: right center;
+      }
+      display: inline-flex;
+    }
+  }
+  &-video {
+    width: 50%;
+    background: url("../../../images/home/ytb-nft.png") center / cover,
+      no-repeat;
+    border-radius: 20px;
+    min-height: 300px;
+    position: relative;
+    &--sign,
+    &--title,
+    &--play {
+      position: absolute;
+    }
+    &--title {
+      top: 0;
+      width: 100%;
+      display: flex;
+      color: #fafafa;
+      font-size: 12px;
+      font-weight: 500;
+      align-items: center;
+      padding: 16px;
+      gap: 5px;
+    }
+    &--name {
+      text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+        1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    }
+    &--play {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--sign {
+      bottom: 0;
+      left: 0;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      color: white;
+      border-radius: 0 5px 0 20px;
+      background: rgba(27, 40, 62, 0.8);
+      padding: 5px 15px;
+    }
+    &--text {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    &--icon {
+      & ~ span {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -1.2px;
+      }
+    }
+    &--logo {
+      scale: 0.8;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &-container {
+      padding-bottom: 60px;
+    }
+    &-bg {
+      flex-wrap: wrap;
+      background-size: 200%;
+      padding: 30px 60px;
+      &--left {
+        width: 100%;
+      }
+      &--title,
+      &--desc {
+        padding-bottom: 20px;
+      }
+    }
+    &-video {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-container {
+      padding-bottom: 30px;
+    }
+    &-bg {
+      padding: 20px 30px;
+      background-size: 300%;
+      &--title {
+        font-size: 25px;
+      }
+      &--title,
+      &--desc {
+        padding-bottom: 15px;
+      }
+      &--desc,
+      &--btn {
+        font-size: 14px;
+      }
+    }
+    &-video {
+      &--title {
+        padding: 10px;
+      }
+      &--name {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 10px;
+      }
+      &--play {
+        scale: 0.8;
+        left: 45%;
+      }
+      &--sign {
+        padding: 5px 10px;
+      }
+      &--text {
+        font-size: 10px;
+      }
+      &--icon ~ span {
+        font-size: 15px;
+      }
+    }
+  }
+}

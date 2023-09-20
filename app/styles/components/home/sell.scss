@@ -1,0 +1,78 @@
+.sell {
+  &-container {
+    padding-bottom: 132px;
+  }
+  &-top {
+    padding-bottom: 48px;
+    width: 100%;
+    text-align: center;
+    &--title {
+      color: #21204a;
+      font-weight: 600;
+      font-size: 32px;
+    }
+  }
+  &-list {
+    display: flex;
+    gap: 24px;
+  }
+  &-item {
+    &--icon {
+      padding: 16px;
+      border-radius: 24px;
+      background: white;
+      margin-bottom: 24px;
+      width: 60px;
+      height: 60px;
+    }
+    &--title {
+      font-weight: 600;
+      color: #11315b;
+      margin-bottom: 12px;
+    }
+    &--desc {
+      font-size: 14px;
+      color: #476285;
+      font-weight: 400;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &-container {
+      padding-bottom: 60px;
+    }
+    &-list {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    &-item {
+      width: 48%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-container {
+      padding-bottom: 30px;
+    }
+    &-top {
+      padding-bottom: 24px;
+      &--title {
+        font-size: 25px;
+      }
+    }
+    &-list {
+      gap: 25px;
+    }
+    &-item {
+      width: 100%;
+      &--icon {
+        margin-bottom: 12px;
+      }
+      &--title {
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+      &--desc {
+        font-size: 12px;
+      }
+    }
+  }
+}

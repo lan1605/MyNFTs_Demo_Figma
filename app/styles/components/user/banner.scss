@@ -1,0 +1,98 @@
+.user-banner {
+  &--container {
+    padding-top: 56px;
+  }
+  &--bg {
+    background: linear-gradient(
+        0deg,
+        #081320 0%,
+        rgba(9, 32, 64, 0.9) 18.23%,
+        rgba(4, 39, 84, 0.83) 30.24%,
+        rgba(0, 56, 130, 0.69) 52.23%,
+        rgba(0, 50, 115, 0) 100%
+      ),
+      url("../../../images/banner/banner user.jpg") 100% 50% / cover no-repeat;
+    min-height: 150px;
+    border-radius: 16px;
+    padding: 28px 32px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &--icon {
+    text-align: right;
+    width: 24px;
+    padding: 4px;
+    height: 24px;
+    background: rgba(177, 177, 179, 0.4);
+    border-radius: 20px;
+    float: right;
+    cursor: pointer;
+  }
+  &--content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &--avatar {
+    width: 76px;
+    height: 76px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+  }
+  &--img {
+    border-radius: 50%;
+    //   border-radius: 16px;
+    width: 100%;
+    height: 100%;
+  }
+  &--check {
+    position: absolute;
+    bottom: 0px;
+    right: -10px;
+  }
+  &--info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &--name {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &--someone {
+    color: #bdcadb;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 13px;
+    & span {
+      color: #e9ecf2;
+      font-weight: 500;
+    }
+  }
+  &--updated {
+    font-size: 12px;
+    font-weight: 400;
+    color: #bdcadb;
+  }
+  &--contact {
+    text-align: right;
+    color: #fafcff;
+    font-size: 12px;
+  }
+  &--social {
+    font-weight: 400;
+  }
+  &--address {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 500;
+    & span {
+      font-weight: 700;
+    }
+  }
+}

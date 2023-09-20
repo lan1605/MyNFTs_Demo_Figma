@@ -1,0 +1,120 @@
+.connect {
+  position: relative;
+}
+.connect-container {
+  min-height: 800px;
+  display: flex;
+  gap: 92px;
+  align-items: center;
+  background: #f0f4ff;
+}
+.connect-img {
+  padding: 24px;
+  min-height: 800px;
+  width: 25%;
+  background: url("../../../images/banner/banner-collection-artist.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.connect-wallet {
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+  width: 35%;
+}
+.connect-title {
+  color: #11315b;
+  font-size: 32px;
+  font-weight: 600;
+}
+.connect--desc {
+  color: #476285;
+  font-weight: 400;
+}
+.connect-tab {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #bdcadb;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+.connect-tab--item {
+  padding: 12px 0;
+  cursor: pointer;
+  color: #8395af;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-direction: row;
+}
+.connect-tab--item > span {
+  color: #476285;
+  font-weight: 400;
+  font-size: 10px;
+  padding: 0 4px;
+  background: #e9ecf2;
+  border-radius: 4px;
+}
+.connect-tab--item.active {
+  color: #11315b;
+  border-bottom: 2px solid #11315b;
+}
+.connect-tab--item.active > span {
+  color: #f0f4ff;
+  background: #11315b;
+}
+.connect-btns {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  width: 100%;
+}
+.connect-social {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.connect-social--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid #bdcadb;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #476285;
+}
+.connect-social--info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.connect-social--popular {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: linear-gradient(214deg, #0698f9 0%, #f906f9 100%);
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+}
+.connect-btn {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #bdcadb;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #11315b;
+}
+.connect-author {
+  font-size: 12px;
+  font-weight: 400;
+  color: #cde2fe;
+}
+.connect-name {
+  color: #fcf6fd;
+  font-weight: 500;
+}

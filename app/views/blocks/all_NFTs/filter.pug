@@ -1,0 +1,22 @@
+section.filter 
+    .filter-container 
+        .filter-btn 
+            img(src="./images/icons/sliders.png").filter-btn--icon 
+            .filter-text Filters
+        .filter-reload F5
+        .filter-search 
+            i.fal.fa-search.filter-search--icon
+            input.filter-search--input(placeholder="Search NFTs", type="text")
+        .filter-price 
+            .filter-text Price: Low to high
+            i.fas.fa-chevron-down
+        .filter-sort
+            .filter-sort--describe
+                img(src="./images/icons/bar-chart-2.png", alt="icon").filter-sort--icon
+                .filter-text Sort by
+            .filter-sort--select
+                .filter-sort--option Recent
+                i.fas.fa-chevron-down.filter-sort--icon 
+        .filter-listcustom
+            img(src="./images/icons/grid-2.png").filter-listcustom--card#gird-3
+            img(src="./images/icons/grid-active.png").filter-listcustom--card#grid-4.filter-listcustom--active

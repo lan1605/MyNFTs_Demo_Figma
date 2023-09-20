@@ -1,0 +1,144 @@
+.artist {
+  padding-bottom: 132px;
+  &-items {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  &-list {
+    display: flex;
+    gap: 48px;
+    width: 100%;
+  }
+  &-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--icon {
+      scale: 0.8;
+    }
+    &--left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 73%;
+    }
+    &--right {
+      width: 27%;
+      text-align: right;
+    }
+    &--number {
+      font-size: 20px;
+      font-weight: 500;
+      color: #11315b;
+    }
+    &--avatar {
+      position: relative;
+      //   margin: 6px;
+    }
+    &--img {
+      width: 60px;
+      height: 60px;
+      border: 4px solid white;
+      object-fit: cover;
+      flex: 1 0 0;
+      border-radius: 50%;
+    }
+    &--check {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    &--after {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: #21204a8c;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+    }
+
+    &--imgfollower {
+      width: 20px;
+      height: 20px;
+      border: 2px solid white;
+      border-radius: 50%;
+      position: relative;
+      &:not(:nth-child(3)) {
+        margin-right: -5px;
+      }
+      &:nth-child(2) {
+        z-index: 10;
+      }
+      &:nth-child(1) {
+        z-index: 10;
+      }
+    }
+    &--name {
+      margin-bottom: 4px;
+      color: #451254;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &--follow {
+      display: flex;
+      gap: 4px;
+      flex-direction: row;
+    }
+    &--followers {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    &--other {
+      color: #9d9bb9;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .artist {
+    padding-bottom: 30px;
+    &-list {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .artist {
+    padding-bottom: 30px;
+    & :where(.autions-top--select) {
+      white-space: pre;
+    }
+    &-items {
+      margin-top: 24px;
+      gap: 12px;
+    }
+    &-list {
+      gap: 12px;
+    }
+    &-item {
+      &--name {
+        font-size: 13px;
+      }
+      &--numberfollowers {
+        font-size: 12px;
+      }
+      &--other {
+        font-size: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+@import "../../helpers/mixins";
+.explore-artist {
+  &--top {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    padding-bottom: 28px;
+  }
+  &--title {
+    @include styleFortitle();
+  }
+  &--result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &--total {
+    display: flex;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    width: 30%;
+  }
+  &--text {
+    color: #11315b;
+  }
+  &--quantity {
+    color: #9d9bb9;
+  }
+  &--options {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+  }
+  &--status {
+    @include styleForSelect();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+  }
+  &--sort {
+    display: flex;
+    gap: 8px;
+    width: 30%;
+    @include styleForSelect();
+    &--describe {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+      object-fit: cover;
+      align-items: center;
+      width: 50%;
+    }
+    &--select {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+  }
+  &--search {
+    @include styleForSelect();
+    cursor: text;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+  }
+  &--input {
+    width: 95%;
+    outline: none;
+    border: none;
+    background: #fafcff;
+    &::placeholder {
+      color: #9d9bb9;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  &--list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    // position: relative;
+    min-height: 50vh;
+    padding-bottom: 420px;
+  }
+  &--loading {
+    padding: 12px 16px;
+    display: inline-flex;
+    align-items: center;
+    // justify-content: center;
+    gap: 20px;
+    border: 1px solid #bdcadb;
+    border-radius: 12px;
+    background-color: #fafcff;
+    margin: 0 auto;
+  }
+  &--item {
+    padding: 16px;
+    width: calc((100% / 3) - 16px);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    min-height: 200px;
+    box-shadow: 0px 0px 0.5px 0px rgba(13, 15, 17, 0.1) inset,
+      6px 12px 24px 0px rgba(102, 146, 204, 0.08);
+  }
+  &--background {
+    position: relative;
+    width: 100%;
+    height: 140px;
+  }
+  &--img {
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+    border-radius: 10px;
+  }
+  &--avatar {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    left: 20px;
+    border: 3px solid white;
+  }
+  &--info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &--name {
+    position: relative;
+    color: #21204a;
+    font-weight: 600;
+    &::after {
+      position: absolute;
+      top: 0;
+      content: "";
+      background: url("../../../images/icons/check.png") no-repeat;
+      background-size: 100%;
+      width: 24px;
+      height: 24px;
+      margin-left: 5px;
+    }
+  }
+  &--job {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6e84ab;
+  }
+  &--follow {
+    padding: 8px 10px;
+    border: 1px solid #6e84ab;
+    border-radius: 10px;
+    color: #21204a;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s linear;
+    &:hover {
+      background: #21204a;
+      color: white;
+      transition: 0.2s linear;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &--result {
+      flex-wrap: wrap;
+    }
+    &--title {
+      font-size: 28px;
+    }
+    &--status {
+      width: 25%;
+    }
+    &--search {
+      width: 40%;
+    }
+    &--sort {
+      width: 35%;
+    }
+    &--item {
+      width: calc((100% / 2) - 12px);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &--title {
+      font-size: 25px;
+    }
+    &--list {
+      gap: 12px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+      height: 400px;
+      padding: 20px 0;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &--item {
+      width: 100%;
+    }
+    &--total {
+      width: 100%;
+    }
+    &--options {
+      width: 100%;
+      flex-direction: column;
+    }
+    &--status,
+    &--search,
+    &--sort {
+      width: 100%;
+    }
+  }
+}

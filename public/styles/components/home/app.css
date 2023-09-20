@@ -1,0 +1,112 @@
+.app-container {
+  padding-bottom: 140px;
+}
+.app-bg {
+  background: #6e84ab;
+  border-radius: 20px;
+  display: flex;
+  gap: 78px;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 200px;
+  color: #f0f6ff;
+  padding: 26px 49px 0 49px;
+}
+.app-bg--left, .app-bg--right {
+  width: 30%;
+}
+.app-bg--left {
+  padding-top: 49px;
+}
+.app-bg--desc {
+  padding-bottom: 32px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.app-bg--strong {
+  font-weight: bold;
+  color: white;
+}
+.app-bg--buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.app-bg--btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 10px 16px;
+  background: #cde2fe;
+  border-radius: 10px;
+  color: #476285;
+  cursor: pointer;
+}
+.app-bg--center {
+  height: 248px;
+}
+.app-bg--right {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.app-bg--qr {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+}
+.app-bg--detail {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  flex-direction: column;
+  width: 100px;
+}
+@media screen and (max-width: 1023px) {
+  .app-container {
+    padding-bottom: 60px;
+  }
+  .app-bg {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .app-bg--left {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .app-bg--center {
+    width: 46%;
+  }
+  .app-bg--right {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .app-container {
+    padding-bottom: 40px;
+  }
+  .app-bg {
+    padding: 13px 30px 0 30px;
+  }
+  .app-bg--center, .app-bg--right {
+    width: 100%;
+  }
+  .app-bg--center {
+    order: 3;
+  }
+  .app-bg--right {
+    order: 2;
+  }
+  .app-bg--desc {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+  .app-bg--btn {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+  .app-bg--detail {
+    font-size: 12px;
+  }
+}

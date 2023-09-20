@@ -1,0 +1,22 @@
+@mixin styleFortitle() {
+  font-size: 32px;
+  font-weight: 600;
+  color: #21204a;
+}
+@mixin styleForSelect() {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 12px 16px;
+  border: 1px solid #bdcadb;
+  border-radius: 12px;
+  background: #fafcff;
+}
+@mixin styleGrid($column: column, $width, $gap) {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: $width;
+  gap: $gap;
+  height: 100%;
+  width: 100%;
+}

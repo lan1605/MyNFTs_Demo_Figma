@@ -1,0 +1,260 @@
+mixin autionsItem(img, collection, title,  avatar, author, number)
+    a(href="#").autions-item 
+        .autions-item--top 
+            .autions-item--image 
+                img(src=img).autions-item--img
+                .autions-item--place Place a bid
+            .autions-item--collection=collection
+            .autions-item--title=title
+        .autions-item--middle 
+            .autions-item--left 
+                +itemItem("Current bid", "300 ETH", "$130,729.12")
+            .autions-item--right
+                +itemItem("Auction ending in", "03d : 25h : 05m", "Bids: 25")
+        .autions-item--bottom
+            .autions-item--artist 
+                img(src=avatar).autions-item--avatar 
+                .autions-item--author=author 
+            .autions-item--like 
+                i.fa.fa-heart.autions-item--icon 
+                .autions-item--number=number
+mixin itemItem(name, strong, other)
+    .autions-item--name= name
+    strong.autions-item--strong=strong
+    .autions-item--other=other
+//- mixin của popular.pug
+mixin popularItem(img1, img2, img3, img4, name, desc, number, percent)
+    a(href="collection.html").popular-item 
+        .popular-item--top 
+            .popular-item--left 
+                img(src=img1).popular-item--img
+            .popular-item--right 
+                img(src=img2).popular-item--img.popular-item--imgtop
+                .popular-item--imgbottom
+                    img(src=img3).popular-item--img
+                    .popular-item--more
+                        img(src=img4).popular-item--img
+        .popular-item--bottom
+            .popular-item--info 
+                .popular-item--name=name
+                .popular-item--desc=desc
+            .popular-item--other
+                .popular-item--number=number
+                .popular-item--percent=percent
+//- mixin của artist.pug
+mixin artistItem(number, img, name, followers, other )
+    .artist-item 
+        a(href="#").artist-item--left 
+            .artist-item--number=number
+            .artist-item--avatar
+                img(src=img).artist-item--img
+                img.artist-item--check(src="./images/icons/check.png")
+            .artist-item--info 
+                .artist-item--name=name
+                .artist-item--follow 
+                    img(src="./images/icons/eth.png", alt="").artist-item--icon 
+                    .artist-item--numberfollowers=followers
+        .artist-item--right
+            .artist-item--followers 
+                img(src="./images/home/follower-1.jpg").artist-item--imgfollower
+                img(src="./images/home/follower-2.jpg").artist-item--imgfollower
+                .artist-item--after 
+                    img(src="./images/home/follower-3.jpg").artist-item--imgfollower
+            .artist-item--other=other
+//- mixin của trending.pug
+mixin trendingItem(img, title, strongPrice, number, strongOffer, timer)
+    .trending-item 
+        .trending-item--top 
+            img(src=img).trending-item--img
+        .trending-item--bottom 
+            .trending-item--collection Collection name 
+            .trending-item--title=title 
+            .trending-item--more    
+                .trending-item--left 
+                    .trending-item--name Price
+                    .trending-item--strong=strongPrice
+                    .trending-item--number=number
+                .trending-item--right
+                    .trending-item--name Best offer
+                    .trending-item--strong=strongOffer
+                    .trending-item--timer 
+                        i.fal.fa-clock  
+                        span= timer
+//- mixin của category.pug
+mixin categoryItem(img1, img2, img3, name, more)
+    .category-item 
+        .category-item--bg 
+            .category-item--left
+                img(src=img1).category-item--img
+            .category-item--center
+                img(src=img2).category-item--img
+            .category-item--right
+                img(src=img3).category-item--img
+            .category-item--card 
+                .category-item--name=name 
+                .category-item--more=more
+//- mixin của sell.pug
+mixin sellItem(img, title, desc)
+    .sell-item 
+        img(src=img).sell-item--icon 
+        .sell-item--title=title
+        .sell-item--desc=desc
+mixin footerItem(name, ...objectImg)
+    .footer-menu=name
+        each  val in objectImg
+            a(href="404.html").footer-menu--item=val
+//- mixin của top_artist.pug
+mixin topArtistItem(number=" ", img, name, followers, other )
+    .topartist-item 
+        a(href="#").topartist-item--left 
+            .topartist-item--number=number
+            .topartist-item--avatar
+                img(src=img).topartist-item--img
+                img.topartist-item--check(src="./images/icons/check.png")
+            .topartist-item--info 
+                .topartist-item--name=name
+                .topartist-item--follow 
+                    img(src="./images/icons/eth.png", alt="").topartist-item--icon 
+                    .topartist-item--numberfollowers=followers
+        .topartist-item--right
+            .topartist-item--followers 
+                img(src="./images/home/follower-1.jpg").topartist-item--imgfollower
+                img(src="./images/home/follower-2.jpg").topartist-item--imgfollower
+                .topartist-item--after 
+                    img(src="./images/home/follower-3.jpg").topartist-item--imgfollower
+            .topartist-item--other=other
+//- mixin của Explore Artists
+mixin exploreArtistItem(img, avatar, name, job) 
+    a(href="#").explore-artist--item 
+        .explore-artist--background 
+            img(src=img).explore-artist--img 
+            img(src=avatar).explore-artist--avatar
+        .explore-artist--info 
+            .explore-artist--author 
+                .explore-artist--name= name
+                .explore-artist--job= job
+            .explore-artist--follow Follow
+mixin recentCollectionItem(img, text, name)
+    .recent-collection--item 
+        .recent-collection--img 
+            img(src=img)
+        .recent-collection--info 
+            .recent-collection--text=text
+            .recent-collection--author by 
+                span.recent-collection--name=name
+mixin exploreCollectionItem( name, desc, number, percent, ...img)
+    a(href="#").explore-collection-item 
+        if (img.length === 4)
+            .explore-collection-item--top 
+                .explore-collection-item--left 
+                    img(src=img[0]).explore-collection-item--img
+                .explore-collection-item--right 
+                    img(src=img[1]).explore-collection-item--img.explore-collection-item--imgtop
+                    .explore-collection-item--imgbottom
+                        img(src=img[2]).explore-collection-item--img
+                        .explore-collection-item--more
+                            img(src=img[3]).explore-collection-item--img
+        else if img.length === 2 
+            .explore-collection-item--top 
+                .explore-collection-item--left 
+                    img(src=img[0]).explore-collection-item--img
+                .explore-collection-item--right 
+                    img(src=img[1]).explore-collection-item--img
+        else 
+            .explore-collection-item--topcolumn
+                img(src=img[0]).explore-collection-item--img
+        .explore-collection-item--bottom
+            .explore-collection-item--info 
+                .explore-collection-item--name=name
+                .explore-collection-item--desc=desc
+            .explore-collection-item--other
+                .explore-collection-item--number=number
+                .explore-collection-item--percent=percent 
+mixin propertyItem(id, number, id1, id2, id3, icon="", show="")
+    .tab-property.tab-borderbottom(id=id)
+        .tab-property--top
+            .tab-text Property name
+            .tab-property--more 
+                .tab-property--number=number
+                i.fas.fa-chevron-down.tab-property--subicon(class=icon)
+        .tab-property--content(class=show)
+            .tab-property--item 
+                .tab-property--checkbox 
+                    input.tab-option--input(type="checkbox", value="17", id=id1) 
+                    label(for=id1).tab-option--label Property 1
+                .tab-property--quantity 17
+            .tab-property--item
+                .tab-property--checkbox 
+                    input.tab-option--input(type="checkbox", value="15", id=id2) 
+                    label(for=id2).tab-option--label Property 2
+                .tab-property--quantity 15
+            .tab-property--item
+                .tab-property--checkbox 
+                    input.tab-option--input(type="checkbox", value="8", id=id3) 
+                    label(for=id3).tab-option--label Property 3
+                .tab-property--quantity 8
+mixin nftsItem(img, price, desc,number,  offer, time)
+    a.result-item(href="#") 
+        .result-item--top 
+            img(src=img).result-item--img
+        .result-item--content 
+            .result-item--info
+                .result-item--collection Collection name
+                .result-item--name NFT name Ex Shiba Astronaut
+            .result-item--more
+                .result-item--left
+                    .result-item--text=price
+                    .result-item--desc=desc
+                    .result-item--other=number
+                .result-item--right
+                    .result-item--text=offer
+                    .result-item--desc=desc
+                    .result-item--other 
+                        i.fal.fa-clock
+                        span=time
+mixin activitiesItem(img, type, name, time, btn) 
+    .activities-item(data-type=type)
+        .activities-item--info 
+            img(src=img).activities-item--img 
+            .activities-item--desc 
+                .activities-item--type=type
+                .activities-item--name=name
+                .activities-item--time  
+                    i.fal.fa-clock 
+                    span=time
+        .activities-item--btn=btn
+mixin artistCollectionItem(name, author, datetime, ...img)
+    .artist-list--item 
+        .artist-list--other 
+            .artist-list--info 
+                .artist-list--name
+                    .artist-list--text=name 
+                    .artist-list--author=author
+                .artist-list--datetime=datetime
+            .artist-list--gallery
+                if (img.length === 4)
+                    .artist-list--gallery4
+                        each val, key in img
+                            if (key === 3) 
+                                .artist-list--img
+                                    img(src=val, alt="")
+                                    .artist-list--desc <span> +12 </span> Other items in this collections 
+                            else 
+                                img(src=val, alt="").artist-list--img
+                    .artist-list--more 
+                        a(href="").artist-list--btn View Collection
+                else if (img.length===3)
+                    .artist-list--gallery3
+                        each val in img
+                            img(src=val, alt="").artist-list--img
+                    .artist-list--more 
+                        a(href="").artist-list--btn View Collection
+                else if (img.length===2)
+                    .artist-list--gallery2
+                        each val in img
+                            img(src=val, alt="").artist-list--img
+                    .artist-list--more 
+                        a(href="").artist-list--btn View Collection
+            
+
+    

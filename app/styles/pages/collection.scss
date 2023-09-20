@@ -1,0 +1,7 @@
+@import "../components/collection/banner.scss";
+@import "../components/collection/content.scss";
+.collection {
+  & :where(.filter-container) {
+    padding-top: 0;
+  }
+}

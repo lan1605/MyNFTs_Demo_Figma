@@ -1,0 +1,8 @@
+@import "../components/user/banner.scss";
+@import "../components/user/follow.scss";
+@import "../components/user/tab.scss";
+.user-content {
+  & :where(.filter-container) {
+    padding: 24px 0;
+  }
+}

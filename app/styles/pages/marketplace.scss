@@ -1,0 +1,9 @@
+@import "../components/marketplace/navtab.scss";
+@import "../components/marketplace/top_artist.scss";
+@import "../components/marketplace/verified_artist.scss";
+@import "../components/marketplace/explore_artist.scss";
+@import "../components/marketplace/recent_collection.scss";
+@import "../components/marketplace/explore_collection.scss";
+.section-tabcontent#collection {
+  display: none;
+}

@@ -1,0 +1,30 @@
+footer.footer 
+    .footer-container 
+        .footer-details 
+            a(href="#").footer-details--logo 
+                img(src="./images/logo/Logo.png", alt="")
+                span MyNFT.com
+            .footer-details--text The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.
+        .footer-list 
+            +footerItem("Market Place", 'Home',  "How it works",  "Jobs", "Help center", "Blogs")
+            +footerItem("Company", 'About Us',  "Contact Us",  "Feature", "Discover")
+            .footer-list--contact 
+                .footer-list--updates 
+                    .footer-list--text Get our lastest updates
+                    .footer-list--email
+                        i.fal.fa-envelope.footer-list--icon
+                        input.footer-list--input(type="text", placeholder="Your email")
+                        button.footer-list--btn Subcribe
+                .footer-list--comunity
+                    .footer-list--text Join our comunity
+                    .footer-list--socials
+                        a(href="").footer-list--social
+                            img(src="./images/icons/twitter.png")
+                        a(href="").footer-list--social
+                            img(src="./images/icons/facebook.png")
+                        a.footer-list--social
+                            img(src="./images/icons/instagram.png")
+                        a(href="").footer-list--social
+                            img(src="./images/icons/youtube.png")
+                        a(href="").footer-list--social
+                            img(src="./images/icons/tele.png")

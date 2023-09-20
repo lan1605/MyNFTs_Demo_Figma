@@ -1,0 +1,258 @@
+.autions {
+  padding: 80px 0 132px 0;
+}
+.autions-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 36px;
+}
+.autions-top--left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.autions-top--title {
+  background: linear-gradient(214deg, #0698f9 0%, #f906f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 32px;
+}
+.autions-top--select {
+  padding: 10px 13px;
+  border: none;
+  background: #cde2fe;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  gap: 15px;
+  font-size: 15px;
+}
+.autions-top--right, .autions-top--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.autions-top--all {
+  padding: 7px 16px;
+  border: 2px solid #6692cc;
+  color: #6692cc;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 500;
+}
+.autions-top--arrow {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 2px solid #6692cc;
+  cursor: pointer !important;
+  color: #6692cc;
+  font-weight: bold;
+  z-index: 10000;
+}
+.autions-items {
+  width: 100%;
+}
+.autions-list {
+  padding: 24px 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(25% - 20px);
+  gap: 24px;
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+.autions-list::-webkit-scrollbar {
+  display: none;
+}
+.autions-item {
+  width: 100%;
+  min-height: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0.5px 0px rgba(13, 15, 17, 0.1) inset, 6px 12px 24px 0px rgba(102, 146, 204, 0.08);
+}
+.autions-item--top {
+  padding-bottom: 12px;
+}
+.autions-item--place {
+  display: none;
+}
+.autions-item--image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.autions-item--img {
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.autions-item:hover .autions-item--img {
+  filter: blur(1px);
+}
+.autions-item:hover .autions-item--place {
+  position: absolute;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  display: block;
+  font-size: 15px;
+  background: #cde2fe;
+  bottom: 15px;
+  color: #11315b;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.autions-item--collection, .autions-item--name, .autions-item--other, .autions-item--author, .autions-item--number {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #6e84ab;
+}
+.autions-item--title {
+  color: #21204a;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
+  object-fit: contain;
+}
+.autions-item--middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+.autions-item--strong {
+  font-weight: bold;
+  font-size: 16px;
+  color: #11315b;
+}
+.autions-item--bottom {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.autions-item--bottom:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  background: linear-gradient(to left, transparent, #0698f9, #f906f9, transparent);
+  border-radius: 20px;
+}
+.autions-item--artist, .autions-item--like {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.autions-item--like {
+  gap: 5px;
+}
+.autions-item--avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.autions-item--icon {
+  background: linear-gradient(214deg, #0698f9 0%, #f906f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-chevron-down {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1023px) {
+  .autions {
+    padding: 60px 0;
+  }
+  .autions-items {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-align: center;
+    padding-bottom: 24px;
+  }
+  .autions-items::-webkit-scrollbar {
+    display: none;
+  }
+  .autions-list {
+    grid-auto-columns: 33.3333333333%;
+  }
+  .autions-top--title {
+    font-size: 30px;
+  }
+  .autions-item--img {
+    width: 100%;
+  }
+  .autions-item:hover .autions-item--place {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .autions {
+    padding-bottom: 30px;
+  }
+  .autions-top {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .autions-top--left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .autions-top--title {
+    font-size: 25px;
+  }
+  .autions-top--select {
+    font-size: 13px;
+  }
+  .autions-top--all {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+  .autions-top--btn {
+    font-size: 14px;
+    gap: 5px;
+  }
+  .autions-top--right {
+    gap: 5px;
+  }
+  .autions-list {
+    grid-auto-columns: 100%;
+  }
+  .autions-item--top, .autions-item--middle {
+    padding-bottom: 8px;
+  }
+  .autions-item--collection, .autions-item--name, .autions-item--other, .autions-item--author, .autions-item--number {
+    font-size: 10px;
+  }
+  .autions-item--title {
+    font-size: 15px;
+  }
+  .autions-item--strong {
+    font-size: 13px;
+  }
+  .autions-item--avatar {
+    width: 25px;
+    height: 25px;
+  }
+}

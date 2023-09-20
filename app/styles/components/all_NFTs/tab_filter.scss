@@ -1,0 +1,359 @@
+@import "../../helpers/mixins";
+.tab {
+  &-text,
+  &-icon {
+    pointer-events: none;
+  }
+  &-icon {
+    transition: all 0.5s ease-in-out;
+  }
+  &-filter {
+    width: 20%;
+    display: none;
+    animation: unchangeWidth 0.9s;
+  }
+  &-borderbottom {
+    border-bottom: 1px solid #bdcadb;
+  }
+  //   CSS Explore
+  &-explore {
+    padding-top: 12px;
+    padding-bottom: 16px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    &--item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    &--text {
+      font-size: 12px;
+      font-weight: 400;
+      color: #9d9bb9;
+    }
+    &--name {
+      font-weight: 500;
+      font-size: 14px;
+      color: #11315b;
+    }
+    &--img {
+      flex-shrink: 0;
+      //   object-fit: cover;
+    }
+  }
+  &-text {
+    font-size: 18px;
+    color: #476285;
+    font-weight: 600;
+  }
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    // padding-bottom: 16px;
+    padding: 12px 0 16px 0;
+    cursor: pointer;
+  }
+  &-icon {
+    color: #476285;
+  }
+  //   CSS Status
+  &-status {
+    &--content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 16px;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    &--item {
+      padding: 8px 10px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #6e84ab;
+      border: 1px solid #bdcadb;
+      background: #fafcff;
+      cursor: pointer;
+      &.tab-item--active {
+        border-color: #11315b;
+        background: #11315b;
+        color: white;
+      }
+    }
+  }
+  //   CSS Price
+  &-price {
+    &--content {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      flex-direction: column;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    &--select {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include styleForSelect();
+    }
+    &--text {
+      color: #476285;
+    }
+    &--options {
+      display: flex;
+      gap: 8px;
+      color: #476285;
+      font-weight: 500;
+      align-items: center;
+      font-size: 16px;
+    }
+    &--between {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    &--input {
+      width: calc((100% / 2) - 20px);
+      @include styleForSelect();
+      outline: none;
+      cursor: text;
+      color: #9d9bb9;
+      &::placeholder {
+        color: #9d9bb9;
+      }
+    }
+    &--btn {
+      outline: none;
+      padding: 12px 16px;
+      background: #e9ecf2;
+      border: none;
+      border-radius: 12px;
+      color: #11315b;
+      font-weight: 400;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  //   CSS Type
+  &-type {
+    &--content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      max-height: 0;
+    }
+    &--item {
+      padding: 8px 10px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #6e84ab;
+      border: 1px solid #bdcadb;
+      background: #fafcff;
+      cursor: pointer;
+      &.tab-item--active {
+        border-color: #11315b;
+        background: #11315b;
+        color: white;
+      }
+    }
+  }
+  //   CSS Options
+  &-option {
+    &--content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      max-height: 0;
+    }
+    &--checkbox {
+      display: flex;
+      align-items: center;
+      vertical-align: bottom;
+    }
+    &--input {
+      display: none;
+    }
+
+    &--label {
+      position: relative;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 14px;
+      vertical-align: bottom;
+
+      &::before {
+        content: "";
+        border: 1px solid #476285;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+          inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 8px;
+        display: inline-block;
+        position: relative;
+        vertical-align: bottom;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+    }
+    &--input:checked {
+      & ~ .tab-option--label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 6px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        border-top-left-radius: 5px;
+        transform: rotate(45deg);
+      }
+      & ~ .tab-option--label:before {
+        background: #476285;
+      }
+    }
+  }
+  //   CSS Collections
+  &-collection {
+    &--content {
+      display: flex;
+      gap: 12px;
+      width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      max-height: 0;
+    }
+    &--result {
+      background: #e9ecf2;
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      padding: 8px;
+      border-radius: 12px;
+    }
+    &--author {
+      display: flex;
+      gap: 12px;
+    }
+    &--img {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+    }
+    &--name {
+      color: #11315b;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &--floor {
+      color: #64609f;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    &--icon {
+      object-fit: cover;
+      cursor: pointer;
+    }
+    &--search {
+      @include styleForSelect();
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: text;
+    }
+    &--input {
+      border: none;
+      outline: none;
+      width: 100%;
+      background: #fafcff;
+      color: #9d9bb9;
+      &::placeholder {
+        color: #9d9bb9;
+      }
+    }
+  }
+  //   CSS Property
+  &-property {
+    &--top {
+      display: flex;
+      padding: 12px 0 16px 0;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    &--more {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+    &--subicon,
+    &--number,
+    &--label,
+    &--quantity {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    &--subicon {
+      transition: all 0.3s ease-in-out;
+    }
+    &--content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      max-height: 0;
+    }
+    &--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.tab-show {
+  max-height: unset;
+  margin-bottom: 16px;
+}
+.show-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: changeWidth 0.9s;
+}
+.change-icon {
+  transform: rotate(180deg);
+}
+@keyframes changeWidth {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes unchangeWidth {
+  100% {
+    width: 20%;
+  }
+  0% {
+    width: 0%;
+  }
+}

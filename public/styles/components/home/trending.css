@@ -1,0 +1,100 @@
+.trending-container {
+  padding-bottom: 132px;
+}
+.trending-list {
+  width: 100%;
+  padding: 24px 0;
+}
+.trending-items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(20% - 1px);
+  gap: 24px;
+  height: 100%;
+  width: 100%;
+  padding: 24px 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+.trending-items::-webkit-scrollbar {
+  display: none;
+}
+.trending-item {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  min-height: 100px;
+  box-shadow: 0px 0px 0.5px 0px rgba(13, 15, 17, 0.1) inset, 6px 12px 24px 0px rgba(102, 146, 204, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.trending-item--top {
+  width: 100%;
+  height: 100%;
+}
+.trending-item--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.trending-item--collection, .trending-item--name, .trending-item--number, .trending-item--timer {
+  color: #9d9bb9;
+  font-size: 12px;
+  font-weight: 400;
+}
+.trending-item--title {
+  color: #21204a;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
+}
+.trending-item--more {
+  margin-top: 12px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: rgba(160, 160, 214, 0.1);
+}
+.trending-item--right {
+  text-align: right;
+}
+.trending-item--strong {
+  color: #11315b;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+  .trending-container {
+    padding-bottom: 60px;
+  }
+  .trending-items {
+    grid-auto-columns: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .trending-container {
+    padding-bottom: 30px;
+  }
+  .trending-items {
+    grid-auto-columns: 100%;
+  }
+  .trending :where(.autions-top--select) {
+    white-space: pre;
+  }
+  .trending-item--collection, .trending-item--name, .trending-item--number, .trending-item--timer {
+    font-size: 10px;
+  }
+  .trending-item--title {
+    font-size: 15px;
+  }
+}

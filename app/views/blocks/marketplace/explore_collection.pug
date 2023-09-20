@@ -1,0 +1,36 @@
+section.explore-collection 
+    .explore-collection--container 
+        .explore-collection--top 
+            .explore-collection--title Explore Collections
+            .explore-collection--result 
+                .explore-collection--total
+                    .explore-collection--text Total:
+                    span.explore-collection--quantity  2,798 collections
+                .explore-collection--options 
+                    .explore-collection--reload F5
+                    .explore-collection--search 
+                        i.fal.fa-search.explore-collection--icon
+                        input.explore-collection--input(placeholder="Search collections")
+                    .explore-collection--status 
+                        .explore-collection--status--option All blockchains
+                        i.fal.fa-chevron-down.explore-collection--status--icon 
+                    .explore-collection--sort
+                        .explore-collection--sort--describe
+                            img(src="./images/icons/bar-chart-2.png", alt="icon").explore-collection--sort--icon
+                            .explore-collection--sort--text Sort by
+                        .explore-collection--sort--select
+                            .explore-collection--sort--option Recent
+                            i.fal.fa-chevron-down.explore-collection--sort--icon 
+        .explore-collection--list 
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/home/img-popular-1.jpg", "./images/home/img-popular-2.jpg", "./images/home/img-popular-3.jpg", "./images/home/img-popular-4.jpg")
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/home/img-popular-5.jpg", "./images/home/img-popular-6.jpg", "./images/home/img-popular-7.jpg", "./images/home/img-popular-8.jpg")
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/home/img-popular-9.jpg", "./images/home/img-popular-10.jpg")
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/marketplace/collection-9.jpg")
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/marketplace/collection-5.jpg", "./images/marketplace/explore-artist-11.jpg", "./images/home/artist-avatar-6.jpg", "./images/marketplace/collection-16.jpg")
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/marketplace/collection-10.jpg", "./images/marketplace/collection-11.jpg", "./images/marketplace/collection-12.jpg", "./images/marketplace/collection-13.jpg")
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/marketplace/collection-14.jpg", "./images/marketplace/collection-15.jpg")
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/marketplace/collection-8.jpg")
+            +exploreCollectionItem("NFT name Ex Shiba Astronaut","Floor: 19 ETH ~ $108.7K", "128 ETH", "-29%","./images/marketplace/collection-17.jpg", "./images/marketplace/collection-18.jpg", "./images/marketplace/collection-19.jpg", "./images/marketplace/collection-20.jpg")
+        .explore-collection--loading 
+            i.fas.fa-spinner.explore-collection--loading--icon 
+            .explore-collection--loading--text Loading

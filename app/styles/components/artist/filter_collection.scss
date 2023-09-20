@@ -1,0 +1,79 @@
+@import "../../helpers/mixins";
+.artist-filter {
+  &--container {
+    display: flex;
+    gap: 124px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  &--result {
+    display: flex;
+    white-space: pre;
+    gap: 5px;
+    font-weight: 500;
+  }
+  &--total {
+    color: #11315b;
+  }
+  &--number {
+    color: #9d9bb9;
+  }
+  &--options {
+    display: flex;
+    width: 80%;
+    gap: 12px;
+    color: #476285;
+  }
+  &--search {
+    @include styleForSelect();
+    width: 50%;
+    color: #9d9bb9;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & input {
+      width: 95%;
+      border: none;
+      outline: none;
+      color: #9d9bb9;
+      background: #fafcff;
+      &::placeholder {
+        color: #9d9bb9;
+        font-size: 14px;
+      }
+    }
+  }
+  &--blockchain {
+    @include styleForSelect();
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  &--sort {
+    width: 30%;
+    @include styleForSelect();
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  &--text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &--select {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    & span {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}

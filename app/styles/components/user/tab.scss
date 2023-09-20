@@ -1,0 +1,37 @@
+.user-tab {
+  &--container {
+    padding-top: 24px;
+  }
+  &--list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    border-bottom: 1px solid #bdcadb;
+  }
+  &--item {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #8395af;
+    cursor: pointer;
+    font-weight: 500;
+    gap: 4px;
+    & span {
+      font-size: 10px;
+      color: #476285;
+      font-weight: 400;
+      padding: 0 4px;
+      background: #e9ecf2;
+      border-radius: 4px;
+    }
+  }
+}
+.tab-active {
+  color: #11315b;
+  border-bottom: 2px solid #11315b;
+  & span {
+    background: #11315b;
+    color: white;
+  }
+}

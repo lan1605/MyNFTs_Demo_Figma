@@ -1,0 +1,116 @@
+.app {
+  &-container {
+    padding-bottom: 140px;
+  }
+  &-bg {
+    background: #6e84ab;
+    border-radius: 20px;
+    display: flex;
+    gap: 78px;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 200px;
+    color: #f0f6ff;
+    padding: 26px 49px 0 49px;
+    &--left,
+    &--right {
+      width: 30%;
+    }
+    &--left {
+      padding-top: 49px;
+    }
+    &--desc {
+      padding-bottom: 32px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    &--strong {
+      font-weight: bold;
+      color: white;
+    }
+    &--buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &--btn {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      padding: 10px 16px;
+      background: #cde2fe;
+      border-radius: 10px;
+      color: #476285;
+      cursor: pointer;
+    }
+    &--center {
+      height: 248px;
+    }
+    &--right {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+    }
+    &--qr {
+      background: white;
+      border-radius: 10px;
+      padding: 12px;
+    }
+    &--detail {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 500;
+      flex-direction: column;
+      width: 100px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &-container {
+      padding-bottom: 60px;
+    }
+    &-bg {
+      flex-wrap: wrap;
+      gap: 40px;
+      &--left {
+        width: 100%;
+        padding-top: 20px;
+      }
+      &--center {
+        width: 46%;
+      }
+      &--right {
+        width: 45%;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-container {
+      padding-bottom: 40px;
+    }
+    &-bg {
+      padding: 13px 30px 0 30px;
+      &--center,
+      &--right {
+        width: 100%;
+      }
+      &--center {
+        order: 3;
+      }
+      &--right {
+        order: 2;
+      }
+      &--desc {
+        font-size: 14px;
+        padding-bottom: 16px;
+      }
+      &--btn {
+        font-size: 14px;
+        padding: 10px 14px;
+      }
+      &--detail {
+        font-size: 12px;
+      }
+    }
+  }
+}

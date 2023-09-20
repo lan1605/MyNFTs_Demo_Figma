@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+.youtube-container {
+  padding-bottom: 132px;
+}
+.youtube-bg {
+  border-radius: 20px;
+  min-height: 400px;
+  background: linear-gradient(181deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../../images/banner/banner-youtube.jpg") center, lightgray 100%/cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 70px;
+}
+.youtube-bg--left {
+  width: 50%;
+}
+.youtube-bg--title {
+  font-size: 32px;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 32px;
+}
+.youtube-bg--desc {
+  color: #e9ecf2;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 32px;
+}
+.youtube-bg--btn {
+  padding: 12px 16px;
+  background: linear-gradient(214deg, #0698f9 0%, #f906f9 100%);
+  background-size: 130% auto;
+  transition: 0.5s;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  display: inline-flex;
+}
+.youtube-bg--btn:hover {
+  background-position: right center;
+}
+.youtube-video {
+  width: 50%;
+  background: url("../../../images/home/ytb-nft.png") center/cover, no-repeat;
+  border-radius: 20px;
+  min-height: 300px;
+  position: relative;
+}
+.youtube-video--sign, .youtube-video--title, .youtube-video--play {
+  position: absolute;
+}
+.youtube-video--title {
+  top: 0;
+  width: 100%;
+  display: flex;
+  color: #fafafa;
+  font-size: 12px;
+  font-weight: 500;
+  align-items: center;
+  padding: 16px;
+  gap: 5px;
+}
+.youtube-video--name {
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+.youtube-video--play {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.youtube-video--sign {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: white;
+  border-radius: 0 5px 0 20px;
+  background: rgba(27, 40, 62, 0.8);
+  padding: 5px 15px;
+}
+.youtube-video--text {
+  font-size: 12px;
+  font-weight: 400;
+}
+.youtube-video--icon ~ span {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+}
+.youtube-video--logo {
+  scale: 0.8;
+}
+@media screen and (max-width: 1023px) {
+  .youtube-container {
+    padding-bottom: 60px;
+  }
+  .youtube-bg {
+    flex-wrap: wrap;
+    background-size: 200%;
+    padding: 30px 60px;
+  }
+  .youtube-bg--left {
+    width: 100%;
+  }
+  .youtube-bg--title, .youtube-bg--desc {
+    padding-bottom: 20px;
+  }
+  .youtube-video {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .youtube-container {
+    padding-bottom: 30px;
+  }
+  .youtube-bg {
+    padding: 20px 30px;
+    background-size: 300%;
+  }
+  .youtube-bg--title {
+    font-size: 25px;
+  }
+  .youtube-bg--title, .youtube-bg--desc {
+    padding-bottom: 15px;
+  }
+  .youtube-bg--desc, .youtube-bg--btn {
+    font-size: 14px;
+  }
+  .youtube-video--title {
+    padding: 10px;
+  }
+  .youtube-video--name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 10px;
+  }
+  .youtube-video--play {
+    scale: 0.8;
+    left: 45%;
+  }
+  .youtube-video--sign {
+    padding: 5px 10px;
+  }
+  .youtube-video--text {
+    font-size: 10px;
+  }
+  .youtube-video--icon ~ span {
+    font-size: 15px;
+  }
+}

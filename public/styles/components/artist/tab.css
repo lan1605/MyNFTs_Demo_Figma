@@ -1,0 +1,30 @@
+.artist-tab--container {
+  padding: 36px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.artist-tab--list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.artist-tab--item {
+  padding: 12px 16px;
+  border: 2px solid #bdcadb;
+  border-radius: 12px;
+  color: #11315b;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.artist-tab--item.active {
+  border: none;
+  color: white;
+  background: #1b5198;
+}
+.artist-tab--profile {
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: 500;
+}

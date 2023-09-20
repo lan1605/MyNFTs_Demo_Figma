@@ -1,0 +1,72 @@
+.tab-filter 
+    .tab-explore.tab-borderbottom
+        .tab-explore--item 
+            img(src="./images/icons/coin.png").tab-explore--img 
+            .tab-explore--info 
+                .tab-explore--text Explore
+                .tab-explore--name Ethereum Blockchain
+        i.fas.fa-chevron-down.tab-icon
+    .tab-status.tab-borderbottom
+        .tab-top#status 
+            .tab-text Status
+            i.fas.fa-chevron-down.tab-icon 
+        .tab-status--content
+            .tab-status--item.tab-item--active All 
+            .tab-status--item Open for offers
+            .tab-status--item Live auctions
+            .tab-status--item Not for sale 
+            .tab-status--item Buy now
+    .tab-price.tab-borderbottom
+        .tab-top#price
+            .tab-text Price
+            i.fas.fa-chevron-down.tab-icon.change-icon
+        .tab-price--content.tab-show
+            .tab-price--select 
+                .tab-price--text Currency:
+                .tab-price--options
+                    .tab-price--option ETH
+                    i.fas.fa-chevron-down.tab-icon
+            .tab-price--between 
+                input.tab-price--input(type="text", placeholder="Min")
+                .tab-price--desc To
+                input.tab-price--input(type="text", placeholder="Max")
+            button.tab-price--btn Apply
+    .tab-type.tab-borderbottom
+        .tab-top#type 
+            .tab-text Type
+            i.fas.fa-chevron-down.tab-icon.change-icon
+        .tab-type--content.tab-show
+            .tab-type--item.tab-item--active All 
+            .tab-type--item Multiple editions
+            .tab-type--item Single editions
+    .tab-option.tab-borderbottom
+        .tab-top#options
+            .tab-text Options
+            i.fas.fa-chevron-down.tab-icon.change-icon 
+        .tab-option--content.tab-show
+            .tab-option--checkbox 
+                input.tab-option--input(type="checkbox", value="Verified only", id="verified") 
+                label(for="verified").tab-option--label  Verified only
+            .tab-option--checkbox 
+                input.tab-option--input(type="checkbox", value="Show lazy minted items", id="show") 
+                label(for="show").tab-option--label  Show lazy minted items
+    .tab-collection.tab-borderbottom
+        .tab-top#collection
+            .tab-text Collections
+            i.fas.fa-chevron-down.tab-icon.change-icon 
+        .tab-collection--content.tab-show 
+            .tab-collection--result 
+                .tab-collection--author
+                    img.tab-collection--img(src="./images/home/trending-4.jpg", alt="")
+                    .tab-collection--info
+                        .tab-collection--name Yura Mirion
+                        .tab-collection--floor Floor: 13 ETH
+                img(src="./images/icons/x.png").tab-collection--icon
+            .tab-collection--search
+                i.fal.fa-search 
+                input(text="text", placeholder="Search").tab-collection--input
+            +propertyItem("property_1","2","1_17_property_1","1_15_property_2", "1_8_property_3","change-icon","tab-show")
+            +propertyItem("property_2","2","2_17_property_1","2_15_property_2", "2_8_property_3")
+            +propertyItem("property_3","12","3_17_property_1","3_15_property_2", "3_8_property_3")
+            +propertyItem("property_4","8","4_17_property_1","4_15_property_2", "4_8_property_3")
+    

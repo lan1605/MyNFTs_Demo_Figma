@@ -1,0 +1,117 @@
+.banner {
+  min-height: 50vh;
+  background: url("../../images/banner/Noise.png") #21204a;
+  // mix-blend-mode: lighten;
+  &-container {
+    color: #bdcadb;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+  }
+  &-info {
+    width: 40%;
+    padding-top: 76px;
+    &--title {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      color: white;
+      padding-bottom: 20px;
+    }
+    &--desc {
+      font-size: 14px;
+      font-weight: 400;
+      padding-bottom: 40px;
+    }
+    &--btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(214deg, #0698f9 0%, #f906f9 100%);
+      padding: 8px 5px 8px 15px;
+      border-radius: 12px;
+      width: 40%;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+      background-size: 130% auto;
+      &:hover {
+        background-position: right center;
+      }
+    }
+    &--text {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &--icon {
+      color: black;
+      border-radius: 12px;
+      background: white;
+      padding: 10px 15px;
+    }
+  }
+  &-nft {
+    width: 60%;
+    position: relative;
+    height: 100%;
+    &--img {
+      position: absolute;
+      top: -170px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner {
+    min-height: 70vh;
+    &-container {
+      padding: 0 60px;
+      flex-wrap: wrap;
+    }
+    &-info,
+    &-nft {
+      width: 100%;
+    }
+    &-nft {
+      &--img {
+        top: 0;
+        position: relative;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    min-height: 80vh;
+    &-container {
+      padding: 0 30px;
+    }
+    &-info {
+      padding-top: 40px;
+      &--title {
+        font-size: 26px;
+      }
+      &--desc {
+        font-size: 12px;
+      }
+      &--btn {
+        display: inline-flex;
+        width: unset;
+        gap: 20px;
+        padding: 3px 3px 3px 10px;
+      }
+      &--text {
+        font-size: 14px;
+      }
+      &--icon {
+        padding: 6px 10px;
+        font-size: 14px;
+      }
+    }
+    &-nft {
+      &--img {
+        top: 30px;
+        // scale: 1.;
+      }
+    }
+  }
+}

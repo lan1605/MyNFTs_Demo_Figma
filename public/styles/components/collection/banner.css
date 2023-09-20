@@ -1,0 +1,96 @@
+.collection-banner--container {
+  padding-top: 56px;
+}
+.collection-banner--bg {
+  background: linear-gradient(0deg, #081320 0%, rgba(9, 32, 64, 0.9) 18.23%, rgba(4, 39, 84, 0.83) 30.24%, rgba(0, 56, 130, 0.69) 52.23%, rgba(0, 50, 115, 0) 100%), url("../../../images/banner/banner-collection-artist.jpg") 100% 50%/cover no-repeat;
+  min-height: 150px;
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+.collection-banner--icon {
+  text-align: right;
+  width: 24px;
+  padding: 4px;
+  height: 24px;
+  background: rgba(177, 177, 179, 0.4);
+  border-radius: 20px;
+  float: right;
+  cursor: pointer;
+}
+.collection-banner--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection-banner--img {
+  width: 76px;
+  height: 76px;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+.collection-banner--img img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+.collection-banner--info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.collection-banner--name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.collection-banner--someone {
+  color: #bdcadb;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 13px;
+}
+.collection-banner--someone span {
+  color: #e9ecf2;
+  font-weight: 500;
+}
+.collection-banner--updated {
+  font-size: 12px;
+  font-weight: 400;
+  color: #bdcadb;
+}
+.collection-banner--list {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 100%;
+  background: rgba(177, 177, 179, 0.4);
+  border-radius: 16px;
+}
+.collection-banner--item {
+  padding: 12px 27.5px;
+  text-align: center;
+  color: #e9ecf2;
+}
+.collection-banner--item:not(:nth-child(4)) {
+  position: relative;
+}
+.collection-banner--item:not(:nth-child(4))::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(transparent, white, transparent);
+}
+.collection-banner--text {
+  font-weight: 500;
+}
+.collection-banner--desc {
+  font-size: 10px;
+  font-weight: 400;
+}

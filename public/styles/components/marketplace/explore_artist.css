@@ -1,0 +1,235 @@
+.explore-artist--top {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  padding-bottom: 28px;
+}
+.explore-artist--title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #21204a;
+}
+.explore-artist--result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.explore-artist--total {
+  display: flex;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  width: 30%;
+}
+.explore-artist--text {
+  color: #11315b;
+}
+.explore-artist--quantity {
+  color: #9d9bb9;
+}
+.explore-artist--options {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+.explore-artist--status {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 12px 16px;
+  border: 1px solid #bdcadb;
+  border-radius: 12px;
+  background: #fafcff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 20%;
+}
+.explore-artist--sort {
+  display: flex;
+  gap: 8px;
+  width: 30%;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 12px 16px;
+  border: 1px solid #bdcadb;
+  border-radius: 12px;
+  background: #fafcff;
+}
+.explore-artist--sort--describe {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  object-fit: cover;
+  align-items: center;
+  width: 50%;
+}
+.explore-artist--sort--select {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.explore-artist--search {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 12px 16px;
+  border: 1px solid #bdcadb;
+  border-radius: 12px;
+  background: #fafcff;
+  cursor: text;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+.explore-artist--input {
+  width: 95%;
+  outline: none;
+  border: none;
+  background: #fafcff;
+}
+.explore-artist--input::placeholder {
+  color: #9d9bb9;
+  font-weight: 400;
+  font-size: 14px;
+}
+.explore-artist--list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  min-height: 50vh;
+  padding-bottom: 420px;
+}
+.explore-artist--loading {
+  padding: 12px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #bdcadb;
+  border-radius: 12px;
+  background-color: #fafcff;
+  margin: 0 auto;
+}
+.explore-artist--item {
+  padding: 16px;
+  width: calc(33.3333333333% - 16px);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  min-height: 200px;
+  box-shadow: 0px 0px 0.5px 0px rgba(13, 15, 17, 0.1) inset, 6px 12px 24px 0px rgba(102, 146, 204, 0.08);
+}
+.explore-artist--background {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+.explore-artist--img {
+  object-fit: cover;
+  width: 100%;
+  height: 85%;
+  border-radius: 10px;
+}
+.explore-artist--avatar {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 20px;
+  border: 3px solid white;
+}
+.explore-artist--info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.explore-artist--name {
+  position: relative;
+  color: #21204a;
+  font-weight: 600;
+}
+.explore-artist--name::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  background: url("../../../images/icons/check.png") no-repeat;
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}
+.explore-artist--job {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6e84ab;
+}
+.explore-artist--follow {
+  padding: 8px 10px;
+  border: 1px solid #6e84ab;
+  border-radius: 10px;
+  color: #21204a;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.explore-artist--follow:hover {
+  background: #21204a;
+  color: white;
+  transition: 0.2s linear;
+}
+@media screen and (max-width: 1023px) {
+  .explore-artist--result {
+    flex-wrap: wrap;
+  }
+  .explore-artist--title {
+    font-size: 28px;
+  }
+  .explore-artist--status {
+    width: 25%;
+  }
+  .explore-artist--search {
+    width: 40%;
+  }
+  .explore-artist--sort {
+    width: 35%;
+  }
+  .explore-artist--item {
+    width: calc(50% - 12px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .explore-artist--title {
+    font-size: 25px;
+  }
+  .explore-artist--list {
+    gap: 12px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 400px;
+    padding: 20px 0;
+  }
+  .explore-artist--list::-webkit-scrollbar {
+    display: none;
+  }
+  .explore-artist--item {
+    width: 100%;
+  }
+  .explore-artist--total {
+    width: 100%;
+  }
+  .explore-artist--options {
+    width: 100%;
+    flex-direction: column;
+  }
+  .explore-artist--status, .explore-artist--search, .explore-artist--sort {
+    width: 100%;
+  }
+}

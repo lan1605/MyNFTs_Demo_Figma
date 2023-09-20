@@ -1,0 +1,135 @@
+.activities-container {
+  padding-top: 56px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+.activities-top {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #bdcadb;
+}
+.activities-top--title {
+  color: #476285;
+  font-size: 24px;
+  font-weight: 400;
+}
+.activities-top--option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #bdcadb;
+  border-radius: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #11315b;
+}
+.activities-content {
+  display: flex;
+  gap: 40px;
+  min-height: 150vh;
+}
+.activities-items {
+  display: flex;
+  width: 75%;
+  gap: 12px;
+  flex-direction: column;
+}
+.activities-item {
+  display: flex;
+  gap: 20px;
+  min-height: 100px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  border-radius: 12px;
+}
+.activities-item:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.6);
+}
+.activities-item:nth-child(even) {
+  background: #f0f6ff;
+}
+.activities-item--img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.activities-item--info {
+  display: flex;
+  gap: 20px;
+}
+.activities-item--type {
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  display: inline-block;
+  border-radius: 10px;
+  background: #11315b;
+  margin-bottom: 16px;
+}
+.activities-item--name {
+  color: #11315b;
+  font-size: 14px;
+  font-weight: 500;
+}
+.activities-item--time {
+  color: #9d9bb9;
+  font-size: 12px;
+  font-weight: 400;
+}
+.activities-item--btn {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 2px solid #bdcadb;
+  font-size: 14px;
+  font-weight: 500;
+  color: #11315b;
+}
+@media screen and (max-width: 767px) {
+  .activities-container {
+    padding-top: 30px;
+    gap: 16px;
+  }
+  .activities-top--title {
+    font-size: 20px;
+  }
+  .activities-top--option {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+  .activities-content {
+    flex-direction: column;
+  }
+  .activities-items {
+    width: unset;
+  }
+  .activities-item--type {
+    font-size: 9px;
+    margin-bottom: 8px;
+  }
+  .activities-item--name {
+    font-size: 12px;
+  }
+  .activities-item--time {
+    white-space: nowrap;
+    font-size: 10px;
+  }
+  .activities-item--btn {
+    font-size: 12px;
+    white-space: pre;
+  }
+  .activities-item--info {
+    gap: 10px;
+  }
+  .activities-item--img {
+    width: 60px;
+  }
+}
